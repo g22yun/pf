@@ -469,9 +469,9 @@ select::-ms-expand {display:none;}
 #bottom_quick > .contents_con .write_con > .input_con > ul > li:first-child {margin:0;}
 #bottom_quick > .contents_con .write_con > .agree_con {float:left; width:23.75%; max-width:285px; text-align:center;}
 #bottom_quick > .contents_con .write_con > .agree_con .a_btn {display:inline-block;}
-#bottom_quick > .contents_con .write_con > .agree_con .a_btn > .check_icon {display:inline-block; width:32px; height:32px; background-image:url("/pf/ts_ox/img/sub/checkbox_icon_off.svg"); background-repeat:no-repeat; background-size:cover; background-position:center; margin:0 4px 0 0; vertical-align:middle; cursor:pointer;}
+#bottom_quick > .contents_con .write_con > .agree_con .a_btn > .check_icon {display:inline-block; width:32px; height:32px; background-image:url("/pf/pf/ts_ox/img/sub/checkbox_icon_off.svg"); background-repeat:no-repeat; background-size:cover; background-position:center; margin:0 4px 0 0; vertical-align:middle; cursor:pointer;}
 #bottom_quick > .contents_con .write_con > .agree_con .a_btn > span {font-size:16px; color:#FFF; line-height:60px; text-decoration-line:underline; vertical-align:middle;}
-#bottom_quick > .contents_con .write_con > .agree_con .a_btn.on > .check_icon {background-image:url("/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
+#bottom_quick > .contents_con .write_con > .agree_con .a_btn.on > .check_icon {background-image:url("/pf/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
 #bottom_quick > .contents_con .write_con > .btn_con {float:left; width:13.33%; max-width:160px;}
 #bottom_quick > .contents_con .write_con > .btn_con .a_btn {display:block; background-color:#222; text-align:center; font-size:24px; color:#fff; line-height:60px; font-family:"JalnanGothic", sans-serif; border-radius:60px; -moz-border-radius:60px; -webkit-border-radius:60px;}
 
@@ -520,9 +520,9 @@ select::-ms-expand {display:none;}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .input_con > .input_con > ul > li:first-child {margin:0;}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con {margin-top:10px; text-align:right;}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn {display:inline-block;}
-.apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn > .check_icon {display:inline-block; width:32px; height:32px; background-image:url("/pf/ts_ox/img/sub/checkbox_icon_off_2.svg"); background-repeat:no-repeat; background-size:cover; background-position:center; margin:0 4px 0 0; vertical-align:middle; cursor:pointer;}
+.apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn > .check_icon {display:inline-block; width:32px; height:32px; background-image:url("/pf/pf/ts_ox/img/sub/checkbox_icon_off_2.svg"); background-repeat:no-repeat; background-size:cover; background-position:center; margin:0 4px 0 0; vertical-align:middle; cursor:pointer;}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn > span {font-size:16px; color:#999; text-decoration-line:underline; vertical-align:middle;}
-.apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn.on > .check_icon {background-image:url("/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
+.apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .contents_con > .agree_con .a_btn.on > .check_icon {background-image:url("/pf/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .btn_con {margin-top:20px; text-align:center;}
 .apply_popup_con > .contents_con > .contents_con > .contents_con > .contents_con .write_con > .btn_con .a_btn {display:inline-block; width:200px; background-color:#222; text-align:center; font-size:24px; color:#FFF; line-height:60px; font-family:"JalnanGothic", sans-serif; border-radius:60px; -moz-border-radius:60px; -webkit-border-radius:60px;}
 
