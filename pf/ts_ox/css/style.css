@@ -108,9 +108,9 @@ select::-ms-expand {display:none;}
 /* 체크박스 버튼 */
 .checkbox_label {display:inline-block; cursor:pointer;}
 .checkbox_label input[type=checkbox] {display:none;}
-.checkbox_label .check_icon {display:inline-block; width:32px; height:32px; background:url("/pf/ts_ox/img/sub/checkbox_icon_off.svg") no-repeat center/cover; margin:0; vertical-align:middle; cursor:pointer;}
+.checkbox_label .check_icon {display:inline-block; width:32px; height:32px; background:url("/pf/pf/ts_ox/img/sub/checkbox_icon_off.svg") no-repeat center/cover; margin:0; vertical-align:middle; cursor:pointer;}
 .checkbox_label span {vertical-align:middle;}
-.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
+.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/pf/pf/ts_ox/img/sub/checkbox_icon_on.svg");}
 
 #wrap {width:100%; /*min-width:280px;*/ margin:0 auto; position:relative; top:0; left:0; z-index:10;}
 
@@ -118,7 +118,7 @@ select::-ms-expand {display:none;}
 #scale_con {transform:scale(0.8); transform-origin:top center;}
 
 /* 격자 배경 */
-.grid_bg {display: grid; grid-template-columns: repeat(auto-fill, 40px); grid-template-rows: repeat(auto-fill, 40px); width:100%; min-width:1980px; height:100%; background:url("/pf/ts_ox/img/grid_bg.png") #155E2A no-repeat center/cover; position:absolute; top:0; left:50%; transform:translateX(-50%);}
+.grid_bg {display: grid; grid-template-columns: repeat(auto-fill, 40px); grid-template-rows: repeat(auto-fill, 40px); width:100%; min-width:1980px; height:100%; background:url("/pf/pf/ts_ox/img/grid_bg.png") #155E2A no-repeat center/cover; position:absolute; top:0; left:50%; transform:translateX(-50%);}
 .grid_bg:before {content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(to right, transparent, transparent 39px, rgba(21, 94, 42, 0.3) 39px, rgba(21, 94, 42, 0.3) 40px), repeating-linear-gradient(to bottom, transparent, transparent 39px, rgba(21, 94, 42, 0.3) 39px, rgba(21, 94, 42, 0.3) 40px);}
 
 /* wrap 배경 */
