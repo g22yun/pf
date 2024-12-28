@@ -1,0 +1,1341 @@
+<?php
+$Menu = "03";
+$sMenu = "03-1";
+
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.html';
+
+if(date("Y-m-d H:i:s") >= "2024-04-18 00:00:00") {
+	comalert("사전 알림 신청이 마감되었습니다.", "/event/event_roulette.html");
+	exit();
+}
+?>
+
+	<div id="container">
+
+		<div id="landing_con" class="event_pre_con">
+			<!--
+			<div class="info01_con">
+				<div class="contents_con">
+					<div class="bg_con">
+						<div class="floor">
+							<img src="/img/event/event_pre/info01_bg_floor.png" alt="바닥" class="fx w_img" />
+							<img src="/img/event/event_pre/info01_bg_floor_m.png" alt="바닥(모바일)" class="fx m_img" />
+						</div>
+
+						<div class="dust w_con">
+							<img src="/img/event/event_pre/info01_bg_dust.png" alt="먼지" class="fx w_img" />
+						</div>
+
+						<div class="light w_con">
+							<img src="/img/event/event_pre/info01_bg_light.png" alt="라이트" class="fx w_img" />
+						</div>
+
+						<div class="roborock w_con">
+							<img src="/img/event/event_pre/info01_bg_roborock.png" alt="로보락" class="fx" />
+						</div>
+
+						<div class="dust m_con">
+							<img src="/img/event/event_pre/info01_bg_dust_m.png" alt="먼지(모바일)" class="fx m_img" />
+						</div>
+
+						<div class="light m_con">
+							<img src="/img/event/event_pre/info01_bg_light_m.png" alt="라이트(모바일)" class="fx m_img" />
+						</div>
+
+						<div class="roborock m_con">
+							<img src="/img/event/event_pre/info01_bg_roborock.png" alt="로보락" class="fx" />
+						</div>
+
+						<div class="dark"></div>
+					</div>
+
+					<div class="ts_con">
+						<div class="title_con">
+							<div class="text01_con">
+								<span>
+									S8 MaxV Ultra
+								</span>
+							</div>
+						
+							<div class="text02_con">
+								<span>
+									COMING SOON
+								</span>
+							</div>
+						
+							<div class="text03_con date_con">
+								<span>
+									<font id="day"></font>
+									<font id="time"></font>
+								</span>
+							</div>
+						</div>
+						
+						<div class="slide_con">
+							<div class="swiper info01_slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											S8 MaxV Ultra 
+										</span>
+									</div>
+									<div class="swiper-slide">
+										<span>
+											COMING SOON
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn_con">
+						<a href="javascript:move_scroll('go_info02_con')">
+							<div class="text_con">
+								<span>
+									사전 알림 신청하기
+								</span>
+							</div>
+
+							<div class="img_con">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M15 5L7.92893 12.0711L0.857864 5" stroke="white" stroke-width="1.5"/>
+								</svg>
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+			-->
+
+			<div class="info02_con go_info02_con">
+				<div class="contents_con">
+					<div class="title_con">
+						<span>
+							알림 신청 이벤트 <br />
+							<font class="color_text">Roborock S8 MaxV Ultra</font>
+						</span>
+					</div>
+					
+					<div class="text_con">
+						<div class="text_div">
+							<span> 
+								사각지대까지 완벽하게 청소 가능한 <br class="m_br" />로보락 신제품의 퍼즐 조각을 맞춰보세요. <br />
+								이벤트 참여 시 출시 소식과 할인 정보는 물론 <br class="m_br" />추첨을 통해 푸짐한 경품을 드립니다.
+							</span>
+						</div>
+					
+						<div class="text_div">
+							<ul>
+								<li>
+									<div class="list_div">
+										<div class="title_con">
+											<span>
+												이벤트 기간
+											</span>
+										</div>
+					
+										<div class="text_con">
+											<span>
+												<font class="color_text">24.04.02(화) - 24.04.17(수)</font>
+											</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_div">
+										<div class="title_con">
+											<span>
+												당첨자 발표
+											</span>
+										</div>
+					
+										<div class="text_con">
+											<span>
+												<font class="color_text">24.04.22(월)</font>
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="prize_con">
+						<div class="title_con">
+							<span>
+								이벤트 경품
+							</span>
+						</div>
+
+						<div class="list_con">
+							<ul>
+								<li>
+									<div class="list_div">
+										<div class="rank_con">
+											<span>
+												1등
+											</span>	
+										</div>
+
+										<div class="img_con">
+											<img src="/img/event/event_pre/info02_prize_img01.png" alt="Roborock S8 MaxV Ultra (3명)" class="fx" />
+										</div>
+
+										<div class="text_con">
+											<span>
+												Roborock S8 <br class="m_br" />MaxV Ultra (3명)
+											</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_div">
+										<div class="rank_con">
+											<span>
+												2등
+											</span>	
+										</div>
+
+										<div class="img_con">
+											<img src="/img/event/event_pre/info02_prize_img02.png" alt="신세계 상품권 20만원 (5명)" class="fx" />
+										</div>
+
+										<div class="text_con">
+											<span>
+												신세계 상품권 <br class="m_br" />20만원 (5명)
+											</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_div">
+										<div class="rank_con">
+											<span>
+												3등
+											</span>	
+										</div>
+
+										<div class="img_con">
+											<img src="/img/event/event_pre/info02_prize_img03.png" alt="스타벅스 기프티콘 5,000원 (300명)" class="fx" />
+										</div>
+
+										<div class="text_con">
+											<span>
+												스타벅스 기프티콘 <br class="m_br" />5,000원 (300명)
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="puzzle_con">
+						<div class="img_con">
+							<div class="img_div on">
+								<img src="/img/event/event_pre/info02_puzzle_img_on.png" alt="퍼즐 이미지(온)" class="fx w_img" />
+								<img src="/img/event/event_pre/info02_puzzle_img_on_m.png" alt="퍼즐 이미지(온)" class="fx m_img on" />
+							</div>
+
+							<div class="img_div off">
+								<img src="/img/event/event_pre/info02_puzzle_img.png" alt="퍼즐 이미지" class="fx w_img" />
+								<img src="/img/event/event_pre/info02_puzzle_img_m.png" alt="퍼즐 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="check_con">
+							<ul>
+								<li>
+									<div class="list_div">
+										<label class="radio_label">
+											<div class="img_con">
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle01.png" alt="퍼즐 1" class="fx w_img" />
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle01_m.png" alt="퍼즐 1(모바일)" class="fx m_img" />
+											</div>
+
+											<div class="check_con">
+												<input type="radio" name="puzzle_type" value="1" />
+												<div class="check_icon"></div>
+												<span>
+													Puzzle 1
+												</span>
+											</div>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="list_div">
+										<label class="radio_label">
+											<div class="img_con">
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle02.png" alt="퍼즐 2" class="fx w_img" />
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle02_m.png" alt="퍼즐 2(모바일)" class="fx m_img" />
+											</div>
+
+											<div class="check_con">
+												<input type="radio" name="puzzle_type" value="2" />
+												<div class="check_icon"></div>
+												<span>
+													Puzzle 2
+												</span>
+											</div>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="list_div">
+										<label class="radio_label">
+											<div class="img_con">
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle03.png" alt="퍼즐 3" class="fx w_img" />
+												<img src="/img/event/event_pre/info02_puzzle_radio_puzzle03_m.png" alt="퍼즐 3(모바일)" class="fx m_img" />
+											</div>
+
+											<div class="check_con">
+												<input type="radio" name="puzzle_type" value="3" />
+												<div class="check_icon"></div>
+												<span>
+													Puzzle 3
+												</span>
+											</div>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="btn_con">
+							<a href="javascript:apply_popup_btn();">
+								사전 알림 신청하기
+							</a>
+						</div>
+					</div>
+
+					<div class="btn_con_tmp">
+						<a href="https://kr.roborock.com/pages/roborock-s8-maxv-ultra" target="_blank">
+							<div class="text_con">
+								<span>
+									제품정보 미리 보기
+								</span>
+							</div>
+
+							<div class="img_con">
+								<img src="/img/event/event_pre/arrow_icon.svg" alt="" />
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 신청 팝업 -->
+			<div class="apply_popup_con_bg" onclick="javascript:apply_popup();"></div>
+			<div class="apply_popup_con">
+				<div class="scroll_con">
+					<div class="contents_con">
+						<div class="title_con">
+							<table cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td align="left" class="text_td">
+											<span>
+												개인정보 수집 및 이용
+											</span>
+										</td>
+										<td align="left" class="btn_td">
+											<a href="javascript:apply_popup();" class="a_btn">
+												<img src="/img/event/event_pre/apply_popup_close_btn.svg" alt="x" class="fx" />
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="write_con">
+							<form name="frmEvent" id="frmEvent" autocomplete="off">
+							<input type="hidden" name="mode" id="mode" value="event" />
+							<input type="hidden" name="check_hp" id="check_hp" value="N" />
+								<div class="intro_con">
+									<span>
+										개인정보 수집 및 이용에 동의해 주세요. <br />
+										동의한 사람에 한해 이벤트 추첨이 진행됩니다.
+									</span>
+								</div>
+
+								<div class="input_con">
+									<ul>
+										<li>
+											<div class="list_div">
+												<div class="title_con">
+													<span>
+														이름
+													</span>
+												</div>
+
+												<div class="info_con">
+													<input type="text" name="name" id="name" placeholder="이름을 입력해 주세요." class="input" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="list_div">
+												<div class="title_con">
+													<span>
+														이메일
+													</span>
+												</div>
+
+												<div class="info_con">
+													<input type="text" name="email" id="email" placeholder="이메일을 입력해 주세요." class="input" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="list_div">
+												<div class="title_con">
+													<span>
+														핸드폰 번호
+													</span>
+												</div>
+
+												<div class="info_con">
+													<div class="tel_con">
+														<div class="input_con">
+															<input type="tel" name="hp" id="hp" maxlength="13" placeholder="‘-’ 없이 숫자만 입력해 주세요." class="input tel_input" />
+
+															<a href="javascript:chkHP();" class="a_btn">
+																중복체크
+															</a>
+														</div>
+
+														<div class="intro_con">
+															<span class="color_text01">
+																참여 이력이 있는 번호입니다.
+															</span>
+															
+															<span class="color_text02">
+																이벤트 참여가 가능합니다.
+															</span>
+															
+															<span class="color_text03">
+																핸드폰 번호를 입력해 주세요.
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="agree_con">
+									<div class="check_con">
+										<ul>
+											<li>
+												<label class="checkbox_label">
+													<input type="checkbox" name="agree" id="agree" />
+													<div class="check_icon"></div>
+													<span>
+														개인정보 수집・이용 동의 후, 이벤트 응모가 <br class="m_br" />가능합니다. (필수)
+													</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox_label">
+													<input type="checkbox" name="marketing" id="marketing" value="Y" />
+													<div class="check_icon"></div>
+													<span>
+														신제품 출시 및 할인정보 제공을 위한 <br />
+														마케팅/광고 활용 목적의 개인정보 수집 이용·동의 (선택)
+													</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox_label">
+													<input type="checkbox" name="ad" id="ad" value="Y" />
+													<div class="check_icon"></div>
+													<span>
+														광고성 정보 수신 동의 (선택)
+													</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+
+									<div class="text_con">
+										<span>
+											<?
+											$sql = " Select content From df_site_page Where type='privacy' ";
+											echo $db->single($sql);
+											?>
+										</span>
+									</div>
+								</div>
+
+								<div class="btn_con">
+									<a href="javascript:apply_popup();" class="a_btn a_btn01">
+										취소
+									</a>
+
+									<a href="javascript:chkRegister();" id="btnRegister" class="a_btn a_btn02">
+										이벤트 참여
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 신청 팝업 -->
+
+			<!-- 얼럿 팝업 -->
+			<div class="alert_popup_con_bg" onclick="javascript:alert_popup();"></div>
+			<div class="alert_popup_con">
+				<div class="btn_con btn01_con">
+					<a href="javascript:alert_popup();">
+						<img src="/img/event/event_pre/alert_popup_icon_close.svg" alt="x" class="fx" />
+					</a>
+				</div>
+
+				<div class="contents_con">
+					<div class="text_con">
+						<span>
+							정답입니다.
+						</span>
+						<img src="/img/event/event_pre/alert_popup_icon_correct.svg" alt="정답입니다. 아이콘" class="fx" />
+					</div>
+				</div>
+
+				<div class="btn_con btn02_con">
+					<a href="javascript:alert_popup();">
+						확인
+					</a>
+				</div>
+			</div>
+			<!-- // 얼럿 팝업 -->
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		// pc 스크롤 상단 이동
+		window.addEventListener('beforeunload', function() {
+			window.scrollTo(0, 0);
+		});
+
+		// mobile 스크롤 상단 이동
+		window.onload = function() {
+			window.scrollTo(0, 0);
+		};
+
+		$(function(){
+			$('img[usemap]').rwdImageMaps();
+		});
+
+		var frm = document.frmEvent;
+		var frm_valid = false;
+		
+		// 디데이
+		/*
+		const daySpan = document.querySelector("#day");
+		const timeSpan = document.querySelector("#time");
+
+		function formatTime(time) {
+			return time < 10 ? '0'+time : time;
+		}
+
+		function find_day(){
+			const ddayDate = new Date("2024-04-16");
+			const ddayTime = new Date("2024-04-16T13:00:00"); // 디데이의 날짜와 시간 설정
+			const today = new Date();
+
+			let day_gap;
+
+			if (today < ddayTime) {
+				day_gap = ddayTime - today; // 디데이 시간 전이라면 디데이 시간까지의 시간 차이 계산
+			} else {
+				day_gap = ddayDate - today; // 디데이 시간이 지났다면 디데이 날짜까지의 시간 차이 계산
+			}
+
+			const day = Math.floor(day_gap / (1000*60*60*24));  // 디데이까지 남은 일수
+			const hour = Math.floor(day_gap / (1000*60*60) % 24);
+			const min = Math.floor(day_gap / (1000*60) % 60);
+			const sec = Math.floor(day_gap / 1000 % 60);
+
+			daySpan.innerText = 'D-' + day;
+			const timeHtml = formatTime(hour) + ':' + formatTime(min) + ':' + formatTime(sec); // 시간을 문자열로 조합
+			
+			// 각 숫자와 ':' 문자를 한 글자씩 분리하여 font 태그로 감싸기
+			let formattedTimeHtml = '';
+			for (let i = 0; i < timeHtml.length; i++) {
+				if (timeHtml.charAt(i) === ':') {
+					formattedTimeHtml += '<font class="num dot">:</font>';
+				} else {
+					formattedTimeHtml += '<font class="num">' + timeHtml.charAt(i) + '</font>';
+				}
+			}
+			
+			timeSpan.innerHTML = formattedTimeHtml;
+		}
+
+		find_day();
+		setInterval(find_day, 1000);
+		*/
+
+		// 신청 버튼 팝업
+		function apply_popup_btn() {
+			if( ($("input[name='puzzle_type']:checked").val() != "1") && ($("input[name='puzzle_type']:checked").val() != "2") && ($("input[name='puzzle_type']:checked").val() != "3") ){
+				// 선택 필요 팝업 호출
+				alert_popup();
+			}else if( ($("input[name='puzzle_type']:checked").val() == "1") || ($("input[name='puzzle_type']:checked").val() == "3") ){
+				// 오답 팝업 호출
+				alert_popup();
+
+				$("input[name='puzzle_type']").prop("checked",false);
+			}else if( ($("input[name='puzzle_type']:checked").val() == "2") ){
+				// 퍼즐 위치로 스크롤 이동
+				$("html,body").animate({scrollTop:$(".event_pre_con > .info02_con > .contents_con > .puzzle_con").offset().top - $("#header").innerHeight()}, 500);
+
+				setTimeout(function(){
+					// 퍼즐 이미지 교체
+					$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.on").css("opacity","1");
+					$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.off").css("opacity","0");
+				}, 500);
+				
+				setTimeout(function(){
+					// 정답 팝업 호출
+					alert_popup();
+				}, 1500);
+			}
+		}
+
+		// 신청 팝업
+		function apply_popup(){
+			// 얼럿 팝업 닫기
+			if($(".alert_popup_con").css("display") == "block"){
+				$(".alert_popup_con_bg").hide();
+				$(".alert_popup_con").fadeOut();
+			}
+
+			// 신청 팝업 노출
+			if($(".apply_popup_con").css("display") == "none"){
+				$("body").addClass("hidden");
+				$(".apply_popup_con_bg").show();
+				$(".apply_popup_con").fadeIn();
+				$(".apply_popup_con > .scroll_con").scrollTop(0);
+				$(".apply_popup_con > .scroll_con > .contents_con > .write_con > form > .agree_con > .text_con").scrollTop(0);
+			}
+			else{
+				$("body").removeClass("hidden");
+				$(".alert_popup_con_bg").fadeOut();
+
+				$(".apply_popup_con_bg").fadeOut();
+				$(".apply_popup_con").fadeOut();
+
+				$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.on").css("opacity","0");
+				$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.off").css("opacity","1");
+				$("input[name='puzzle_type']").prop("checked",false);
+				
+				$('#hp').removeClass('color_text01');
+				$('#hp').removeClass('color_text02');
+				$('#hp').removeClass('color_text03');
+				$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').hide();
+				
+				frm_valid = false;
+				
+				frm.check_hp.value = 'N';
+				frm.reset();
+			}
+		}
+
+		// 얼럿 팝업
+		function alert_popup(){
+			if($(".alert_popup_con").css("display") == "none"){
+				if( ($("input[name='puzzle_type']:checked").val() != "1") && ($("input[name='puzzle_type']:checked").val() != "2") && ($("input[name='puzzle_type']:checked").val() != "3") ){
+					// 선택 필요
+					$("body").addClass("hidden");
+					$(".alert_popup_con_bg").fadeIn();
+					$(".alert_popup_con").fadeIn();
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("정답을 선택해 주세요.");
+					$(".alert_popup_con > .contents_con > .text_con img").attr("src", "/img/event/event_pre/alert_popup_icon_choice.svg");
+					$(".alert_popup_con > .contents_con > .text_con.append").remove();
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:alert_popup();");
+				}else if( ($("input[name='puzzle_type']:checked").val() == "1") || ($("input[name='puzzle_type']:checked").val() == "3") ){
+					// 오답
+					$("body").addClass("hidden");
+					$(".alert_popup_con_bg").fadeIn();
+					$(".alert_popup_con").fadeIn();
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("오답입니다.");
+					$(".alert_popup_con > .contents_con > .text_con img").attr("src", "/img/event/event_pre/alert_popup_icon_wrong.svg");
+					$(".alert_popup_con > .contents_con > .text_con.append").remove();
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:alert_popup();");
+
+					$("input[name='puzzle_type']").prop("checked",false);
+				}else if( ($("input[name='puzzle_type']:checked").val() == "2") ){
+					// 정답
+					$("body").addClass("hidden");
+					$(".alert_popup_con_bg").fadeIn();
+					$(".alert_popup_con").fadeIn();
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("정답입니다.");
+					$(".alert_popup_con > .contents_con > .text_con img").attr("src", "/img/event/event_pre/alert_popup_icon_correct.svg");
+					$(".alert_popup_con > .contents_con > .text_con.append").remove();
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:apply_popup();");
+				}
+			}else{
+				$("body").removeClass("hidden");
+				$(".alert_popup_con_bg").fadeOut();
+				$(".alert_popup_con").fadeOut();
+			}
+		}
+
+		// 이메일 형식 체크
+		function chkEmail(){
+			let email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+			var email = $('#email').val();
+
+			return email_regex.test(email);
+		}
+		
+		// 연락처 하이픈
+		$(document).on("keyup", ".tel_input", function() { 
+			$(this).val( $(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/,"$1-$2-$3").replace("--", "-") );
+		});
+		
+		// 이름 입력
+		$(document).on('keyup', '#name', function(){
+			chkFormValid();
+		});
+		$(document).on('change', '#name', function(){
+			chkFormValid();
+		});
+		
+		// 이메일 입력
+		$(document).on('keyup', '#email', function(){
+			chkFormValid();
+		});
+		$(document).on('change', '#email', function(){
+			chkFormValid();
+		});
+		
+		// 핸드폰 번호 입력
+		$(document).on('keyup', '#hp', function(){
+			$('#hp').removeClass('color_text01');
+			$('#hp').removeClass('color_text02');
+			$('#hp').removeClass('color_text03');
+			$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').hide();
+			
+			frm.check_hp.value = 'N';
+			chkFormValid();
+		});
+		$(document).on('change', '#hp', function(){
+			frm.check_hp.value = 'N';
+			chkFormValid();
+		});
+		
+		// 핸드폰 번호 중복 체크
+		function chkHP(){
+			let hp_regex = /^(01[016789]{1})-?[0-9]{3,4}-?[0-9]{4}$/;
+			var hp = $('#hp').val();
+			
+			if(!hp || hp=='' || hp.length<10 || !hp_regex.test(hp)){
+				$('#hp').addClass('color_text03');
+				
+				$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text01').hide();
+				$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text02').hide();
+				$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text03').show();
+				$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').show();
+				
+				$('#hp').focus();
+				return;
+			}
+			
+			var params = 'mode=check&hp='+hp;
+			$.ajax({
+				type: "POST",
+				url: "/exec.php",
+				data: params,
+				dataType: 'json',
+				async: false,
+				success: function(ret){
+					$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text01').hide();
+					$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text02').hide();
+					$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text03').hide();
+
+					if(ret.result == 'blank'){
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text03').show();
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').show();
+						$('#hp').focus();
+						$('#check_hp').val('N');
+						
+						chkFormValid();
+						return;
+					}
+					else if(ret.result == 'dup'){
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text01').show();
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').show();
+						$('#hp').focus();
+						$('#check_hp').val('N');
+						
+						chkFormValid();
+						return;
+					}
+					else{
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con > span.color_text02').show();
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').show();
+						$('#check_hp').val('Y');
+						
+						chkFormValid();
+						return;
+					}
+				}
+			});
+		}
+		
+		// 약관 클릭
+		$(document).on('click', '#agree', function(){
+			chkFormValid();
+		});
+		
+		// 이벤트 참여 버튼 활성화 체크
+		function chkFormValid(){
+			var nameVal = $('#name').val();
+			var emailVal = $('#email').val();
+			var hpVal = $('#hp').val();
+			var chkHPVal = $('#check_hp').val();
+			var agreeVal = $('#agree').prop('checked');
+			
+			if(
+				nameVal != '' && 
+				emailVal != '' && 
+				chkEmail() == true && 
+				hpVal != '' && 
+				hpVal.length >= 10 && 
+				chkHPVal == 'Y' && 
+				agreeVal == true
+			){
+				frm_valid = true;
+				
+				if( !$('#btnRegister').hasClass('on') )
+					$('#btnRegister').addClass('on');
+			}
+			else{
+				frm_valid = false;
+				
+				if( $('#btnRegister').hasClass('on') )
+					$('#btnRegister').removeClass('on');
+			}
+		}
+		
+		// 이벤트 참여
+		function chkRegister(){
+			chkFormValid();
+			
+			var nameVal = $('#name').val();
+			var emailVal = $('#email').val();
+			var hpVal = $('#hp').val();
+			var chkHPVal = $('#check_hp').val();
+			var agreeVal = $('#agree').prop('checked');
+			
+			if(nameVal == ''){agree_popup("name"); return;}
+			if(emailVal == '' || chkEmail() != true){agree_popup("email"); return;}
+			if(hpVal == '' || hpVal.length < 10){agree_popup("tel"); return;}
+			if(chkHPVal != 'Y'){agree_popup("tel_check"); return;}
+			if(agreeVal != true){agree_popup("agree"); return;}
+
+			var params = $('#frmEvent').serialize();
+			$.ajax({
+				type: "POST",
+				url: "/exec.php",
+				data: params,
+				dataType: 'json',
+				async: false,
+				success: function(ret){
+					if(ret.result == 'dup'){
+						alert('참여 이력이 있는 번호입니다.');
+						return;
+					}
+					else if(ret.result == 'blank'){
+						if(ret.field == 'name'){agree_popup("name"); return;}
+						else if(ret.field == 'email'){agree_popup("email"); return;}
+						else if(ret.field == 'hp'){agree_popup("hp"); return;}
+					}
+					else if(ret.result == 'error'){
+						agree_popup("error");
+						return;
+
+						apply_popup();
+						return;
+					}
+					else{
+						frm.reset();
+						
+						$('#hp').removeClass('color_text01');
+						$('#hp').removeClass('color_text02');
+						$('#hp').removeClass('color_text03');
+						$('.apply_popup_con > .scroll_con > .contents_con > .write_con > form > .input_con > ul > li .tel_con > .intro_con').hide();
+						chkFormValid();
+
+						complete_popup();
+					}
+				}
+			});
+		}
+
+		// 완료 팝업
+		function complete_popup(){
+			if($(".alert_popup_con").css("display") == "none"){
+				$(".apply_popup_con_bg").attr("onclick", "javascript:complete_popup();");
+				$(".apply_popup_con").hide();
+
+				$(".alert_popup_con").fadeIn();
+				$(".alert_popup_con > .contents_con > .text_con span").html("이벤트 참여가 되었습니다.");
+				$(".alert_popup_con > .contents_con").append($("<div class='text_con append'><span>당첨자 발표 24.04.22(월)</span></div>"));
+				$(".alert_popup_con > .contents_con > .text_con img").attr("src", "/img/event/event_pre/alert_popup_icon_complete.svg");
+				$(".alert_popup_con > .btn01_con a").attr("href", "javascript:complete_popup();");
+				$(".alert_popup_con > .btn02_con a").attr("href", "javascript:complete_popup();");
+			}else{
+				$("body").removeClass("hidden");
+				$(".apply_popup_con_bg").fadeOut();
+
+				$(".alert_popup_con_bg").fadeOut();
+				$(".alert_popup_con").fadeOut();
+
+				$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.on").css("opacity","0");
+				$(".event_pre_con > .info02_con > .contents_con > .puzzle_con > .img_con > .img_div.off").css("opacity","1");
+				$("input[name='puzzle_type']").prop("checked",false);
+
+				$("html,body").animate({scrollTop:$("#wrap").offset().top}, 0);
+			}
+		}
+
+		// 신청 얼럿 팝업
+		function agree_popup(type){
+			if($(".alert_popup_con").css("display") == "none"){
+				$(".apply_popup_con_bg").attr("onclick", "javascript:agree_popup();");
+				$(".alert_popup_con").fadeIn();
+
+				if(type == "name"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("이름을 입력해 주세요.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('name')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('name')");
+				}else if(type == "email"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("이메일을 입력해 주세요.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('email')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('email')");
+				}else if(type == "tel"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("핸드폰 번호를 입력해 주세요.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('tel')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('tel')");
+				}else if(type == "tel_check"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("핸드폰 번호 중복체크를 해주세요.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('tel_check')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('tel_check')");
+				}else if(type == "agree"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("개인정보 수집·이용 동의 후, <br />이벤트 응모가 가능합니다.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('agree')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('agree')");
+				}else if(type == "error"){
+					$(".apply_popup_con").css("z-index", "50");
+
+					$(".alert_popup_con > .contents_con > .text_con span").html("오류가 발생했습니다. <br />잠시 후 다시 시도해 주세요.");
+
+					$(".alert_popup_con > .btn01_con a").attr("href", "javascript:agree_popup('')");
+					$(".alert_popup_con > .btn02_con a").attr("href", "javascript:agree_popup('')");
+				}else if(type == ""){
+					$(".apply_popup_con").css("z-index", "100");
+				}
+
+				$(".alert_popup_con > .contents_con > .text_con img").attr("src", "/img/event/event_pre/alert_popup_icon_wrong.svg");
+				$(".alert_popup_con > .contents_con > .text_con.append").remove();
+			}else{
+				$(".apply_popup_con_bg").attr("onclick", "javascript:apply_popup();");
+				$(".apply_popup_con").css("z-index", "100");
+
+				$(".alert_popup_con").fadeOut();
+				$(".alert_popup_con > .btn01_con a").attr("href", "javascript:alert_popup();");
+				$(".alert_popup_con > .btn02_con a").attr("href", "javascript:alert_popup();");
+
+				if(type == "name"){
+					$('#name').focus();
+				}else if(type == "email"){
+					$('#email').focus();
+				}else if(type == "tel"){
+					$('#hp').focus();
+				}else if(type == "tel_check"){
+					$('#hp').focus();
+				}
+			}
+		}
+
+		// 스크롤 이동
+		function move_scroll(item_class){
+			var item = $("."+item_class);
+			var offset_item = item.offset();
+			var position_top = offset_item.top - $("#header").innerHeight();
+			
+			$("html,body").animate({scrollTop:position_top}, 500);
+		}
+
+		$(function(){
+			// 예외 처리
+			$("body").css("background-color", "#ffffff");
+			$("#header").addClass("event_pre scroll");
+
+			// info01 이벤트
+			$(".event_pre_con > .info01_con").addClass("event");
+			setTimeout(function(){
+				$(".event_pre_con > .info01_con").addClass("event2");
+			}, 1550);
+
+			// info01 슬라이드
+			var info01_slide = new Swiper(".info01_slide", {
+				slidesPerView: "auto",
+				autoplay: {
+					delay: 0,
+					stopOnLastSlide: false,
+					disableOnInteraction: true,
+				},
+				speed: 5000,
+				loop: true,
+				simulateTouch: false,
+				allowTouchMove: false,
+			});
+		})
+
+		// 스크롤 이벤트
+		$(window).on("resize scroll", function(){
+			/*
+			if ($(this).scrollTop() > 0) {
+				//
+				$(".event_pre_con > .info01_con").addClass("scroll");
+
+				// 화면 너비 설정
+				if(window.innerWidth > 1024){
+					// info01 버튼 예외 처리
+					$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+						"position": "absolute",
+						"bottom": "126px",
+					});
+				}else{
+					if( $(window).innerHeight() > $(".event_pre_con > .info01_con").innerHeight() ){
+						// info01 버튼 예외 처리
+						$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+							"position": "absolute",
+							"bottom": "22.22vw",
+						});
+					}else{
+						// info01 버튼 예외 처리
+						$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+							"position": "absolute",
+							"bottom": "22.22vw",
+						});
+					}
+				}
+			} else {
+				//
+				$(".event_pre_con > .info01_con").removeClass("scroll");
+
+				// 화면 너비 설정
+				if(window.innerWidth > 1024){
+					if( $(window).innerHeight() > $(".event_pre_con > .info01_con").innerHeight() ){
+						// info01 버튼 예외 처리
+						$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+							"position": "absolute",
+							"bottom": "80px",
+						});
+					}else{
+						// info01 버튼 예외 처리
+						$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+							"position": "fixed",
+							"bottom": "80px",
+						});
+					}
+				}else{
+					// info01 버튼 예외 처리
+					$(".event_pre_con > .info01_con > .contents_con > .btn_con").css({
+						"position": "absolute",
+						"bottom": "22.22vw",
+					});
+				}
+			}
+			*/
+
+			// 헤더 예외 처리
+			/*
+			if ($(this).scrollTop() > $(".event_pre_con > .info01_con").innerHeight()) {
+				$("#header").addClass("scroll");
+			}else{
+				$("#header").removeClass("scroll");
+			}
+			*/
+		});
+	</script>
+
+<? include $_SERVER['DOCUMENT_ROOT'].'/include/footer.html'; ?>
