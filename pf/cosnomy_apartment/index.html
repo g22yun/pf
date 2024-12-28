@@ -1,0 +1,2019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>아파트 중개전문 코스노미</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0; target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+
+<!--url 전송시-->
+<meta property="og:url" content="<?=$url?>">
+<meta property="og:title" content="아파트 중개 전문, 코스노미">  
+<meta property="og:type" content="website">
+<meta property="og:image" content="/pf/pf/cosnomy_apartment/img/url_img.png">
+<meta property="og:description" content="보증금도 선택이 필요한 시대, 국내 최초 보증금 대체 서비스 도입.">
+<!--url 전송시-->
+
+<!--url 전송시02-->
+<meta name="description" content="보증금도 선택이 필요한 시대, 국내 최초 보증금 대체 서비스 도입.">
+<meta name="keywords" content="보증금도 선택이 필요한 시대, 국내 최초 보증금 대체 서비스 도입.">
+
+<link rel="canonical" href="<?=$url?>">
+<!--url 전송시02-->
+
+<link rel="shortcut icon" href="/pf/pf/cosnomy_apartment/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/cosnomy_apartment/css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/cosnomy_apartment/css/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/cosnomy_apartment/css/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/cosnomy_apartment/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/cosnomy_apartment/css/common_all.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/pf/pf/cosnomy_apartment/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/pf/pf/cosnomy_apartment/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="/pf/pf/cosnomy_apartment/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/pf/pf/cosnomy_apartment/js/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+		$('img[usemap]').rwdImageMaps();
+
+		// GSAP Plugin
+		gsap.registerPlugin(ScrollTrigger)
+	});
+</script>
+
+<!-- 비즈스프링 기본 스크립트 -->
+<script type="text/javascript">
+(function(b,s,t,c,k){b[k]=s;b[s]=b[s]||function(){(b[s].q=b[s].q||[]).push(arguments)}; var f=t.getElementsByTagName(c)[0],j=t.createElement(c);j.async=true;j.src='//fs.bizspring.net/gp/gp.v.1.0.yeji.js';f.parentNode.insertBefore(j,f);})(window,'_gp',document,'script','BSGPObj');
+_gp('112036','land');
+</script>
+
+</head>
+<body>
+
+<script type="text/javascript" language="javascript">
+	$(function() {
+		// 팝업 쿠키체크 
+		if( getCookie("close_event01")){
+			$("#pop_event01").hide();
+		}else{
+			$("#pop_event01").show();
+		}
+	});
+	
+	function setCookie( name, value, expiredays ){
+		var todayDate = new Date();
+		todayDate.setDate( todayDate.getDate() + expiredays );
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+	}
+	
+	function closeWin(idx){
+		setCookie("close_"+idx,"close_"+idx,1);
+		$("#pop_"+idx).hide();
+	}
+	
+	function closeWinNo(idx){
+		$("#pop_"+idx).hide();
+	}
+	
+	function getCookie( cookieName ){
+		var search = cookieName + "=";
+		var cookie = document.cookie;
+		
+		if( cookie.length > 0 ){
+			startIndex = cookie.indexOf( cookieName );
+			if( startIndex != -1 ){
+				startIndex += cookieName.length;
+				endIndex = cookie.indexOf( ";", startIndex );
+				if( endIndex == -1) endIndex = cookie.length;
+				return unescape( cookie.substring( startIndex + 1, endIndex ) );
+			}
+			else{
+				return false;
+			}
+		}
+		else{
+			return false;
+		}
+	}
+</script>
+
+<style>
+	/*팝업 이벤트*/
+	.pop_event {position:absolute; top:200px; z-index:100; display:none;}
+	.pop_event > table {width:100%; margin:0 auto;}
+	.pop_event > table > tbody > tr > td {}
+	.pop_event > table > tbody > tr > .contents_td {}
+	.pop_event > table > tbody > tr > .contents_td a {display:block;}
+	.pop_event > table > tbody > tr > .contents_td img {width:100%;}
+	.pop_event > table > tbody > tr > .close_td01 {}
+	.pop_event > table > tbody > tr > .close_td01 label {display:block; cursor:pointer;}
+	.pop_event > table > tbody > tr > .close_td01 label > input {display:none;}
+	.pop_event > table > tbody > tr > .close_td01 label > span {display:block; background-color:#aaaaaa; text-align:center; font-size:12px; color:#ffffff; line-height:40px;}
+	.pop_event > table > tbody > tr > .close_td02 {width:100px;}
+	.pop_event > table > tbody > tr > .close_td02 a {display:block; background-color:#000000; text-align:center; font-size:12px; color:#ffffff; line-height:40px;}
+	
+	/*팝업 이벤트*/
+	#pop_event01 {width:100%; max-width:500px; right:15%;}
+
+	@media all and (max-width: 1024px) {
+		/*팝업 이벤트*/
+		#pop_event01 {max-width:80%; margin:0 auto; top:58px; left:0; right:0;}
+	}
+
+	@media all and (max-width: 768px) {
+		#pop_event01 {max-width:80%; margin:0 auto; top:44px; left:0; right:0;}
+	}
+</style>
+
+<div id="pop_event01" class="pop_event">
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="left" colspan="2" class="contents_td">
+				<a href="/pf/pf/cosnomy_office/" target="_blank">
+					<img src="/pf/pf/cosnomy_apartment/img/popup.png" alt="팝업 이미지" class="fx" />
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" class="close_td01">
+				<label>
+					<input type="checkbox" name="notice" onClick="closeWin('event01')" />
+					<span>
+						오늘 하루 동안 열지 않음
+					</span>
+				</label>
+			</td>
+			<td align="right" class="close_td02">
+				<a href="javascript:closeWinNo('event01');">
+					창닫기
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id="wrap" class="wrap">
+
+	<div id="header" class="tmp">
+		<div class="contents_con">
+			<a href="/pf/pf/cosnomy_apartment/">
+				<img src="/pf/pf/cosnomy_apartment/img/main_logo.png" alt="메인 로고" class="fx w_img" />
+				<img src="/pf/pf/cosnomy_apartment/img/m_main_logo.png" alt="모바일 메인 로고" class="fx m_img" />
+			</a>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="main_con">
+			<div class="info01_con">
+				<div class="contents_con">
+					<div class="slide_con">
+						<div class="swiper-container info01_slide">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide info01_slide_div">
+									<div class="contents_con">
+										<div class="img_con">
+											<div class="img_div">
+												<div class="img">
+													<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+													<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="btn_con btn01">
+											<a href="javascript:move_scroll('go_info07_con');">
+												<span>
+													아파트/빌라 투어신청
+												</span>
+												<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_btn.png" alt="화살표 이미지" class="fx w_img" />
+												<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_btn.png" alt="모바일 화살표 이미지" class="fx m_img" />
+											</a>
+										</div>
+									</div>
+								</div>
+								<!--
+								<div class="swiper-slide info01_slide_div">
+									<div class="contents_con">
+										<div class="img_con">
+											<div class="img_div">
+												<div class="img">
+													<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_img02.png" alt="컨텐츠 이미지" class="fx w_img" />
+													<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="btn_con btn01">
+											<a href="javascript:move_scroll('go_info07_con');">
+												<span>
+													아파트/빌라 투어신청
+												</span>
+												<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_btn.png" alt="화살표 이미지" class="fx w_img" />
+												<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_btn.png" alt="모바일 화살표 이미지" class="fx m_img" />
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide info01_slide_div">
+									<div class="contents_con">
+										<div class="img_con">
+											<div class="img_div">
+												<div class="img">
+													<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_img03.png" alt="컨텐츠 이미지" class="fx w_img" />
+													<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_img03.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="btn_con btn01">
+											<a href="javascript:move_scroll('go_info07_con');">
+												<span>
+													아파트/빌라 투어신청
+												</span>
+												<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_btn.png" alt="화살표 이미지" class="fx w_img" />
+												<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_btn.png" alt="모바일 화살표 이미지" class="fx m_img" />
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide info01_slide_div">
+									<div class="contents_con">
+										<div class="img_con">
+											<div class="img_div">
+												<div class="img">
+													<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_img04.png" alt="컨텐츠 이미지" class="fx w_img" />
+													<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_img04.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="btn_con btn02">
+											<a href="javascript:move_scroll('go_info07_con');">
+												<span>
+													아파트/빌라 투어신청
+												</span>
+												<img src="/pf/pf/cosnomy_apartment/img/main_info01_con_slide_btn.png" alt="화살표 이미지" class="fx w_img" />
+												<img src="/pf/pf/cosnomy_apartment/img/m_main_info01_con_slide_btn.png" alt="모바일 화살표 이미지" class="fx m_img" />
+											</a>
+										</div>
+									</div>
+								</div>
+								-->
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info02_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info02_con_img_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info02_con_img_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info08_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info08_con_img01_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info08_con_img01_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info08_con_img02.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info08_con_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info03_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info03_con_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info03_con_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info03_con_img02_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info03_con_img02_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info04_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info04_con_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info04_con_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info04_con_img02_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info04_con_img02_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info05_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info05_con_img01_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info05_con_img01_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info05_con_img02_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info05_con_img02_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info06_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="contents_con">
+							<div class="img_div">
+								<div class="img img01">
+									<img src="/pf/pf/cosnomy_apartment/img/main_info06_con_img01_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+									<img src="/pf/pf/cosnomy_apartment/img/m_main_info06_con_img01_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+								</div>
+							</div>
+							
+							<div class="img_div of_none">
+								<div class="img img02">
+									<img src="/pf/pf/cosnomy_apartment/img/main_info06_con_img02_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+									<img src="/pf/pf/cosnomy_apartment/img/m_main_info06_con_img02_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+								</div>
+							</div>
+						</div>
+
+						<div class="contents_con">
+							<div class="img_div">
+								<div class="img img01">
+									<img src="/pf/pf/cosnomy_apartment/img/main_info06_con_img03.png" alt="컨텐츠 이미지" class="fx w_img" />
+									<img src="/pf/pf/cosnomy_apartment/img/m_main_info06_con_img03.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+								</div>
+							</div>
+							
+							<div class="img_div">
+								<div class="img img02">
+									<img src="/pf/pf/cosnomy_apartment/img/main_info06_con_img04.png" alt="컨텐츠 이미지" class="fx w_img" />
+									<img src="/pf/pf/cosnomy_apartment/img/m_main_info06_con_img04.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="blank_con">
+						<img src="/pf/pf/cosnomy_apartment/img/main_info06_con_img05.png" alt="컨텐츠 이미지" class="fx w_img" />
+						<img src="/pf/pf/cosnomy_apartment/img/m_main_info06_con_img05.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+					</div>
+				</div>
+			</div>
+
+			<div class="info09_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info09_con_img01_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info09_con_img01_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info09_con_img02.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info09_con_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info10_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info10_con_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info10_con_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info10_con_img02_tmp.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info10_con_img02_tmp.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info13_con">
+				<div class="contents_con">
+					<div class="title_con">
+						<span>
+							<font class="color_text">코스노미</font>를 알면 <br />
+							누가 보증금을 <br class="m_br" />현금으로 납부 하겠어요?
+						</span>
+					</div>
+
+					<div class="nav_con">
+						<ul>
+							<li class="on" val="info13_tab01_con">
+								<span>
+									임차인
+								</span>
+							</li>
+							<li val="info13_tab02_con">
+								<span>
+									임대인
+								</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="slide_con">
+						<div class="contents_con">
+							<div class="tab_con info13_tab01_con">
+								<div class="slide_con">
+									<div class="swiper info13_slide">
+										<div class="swiper-wrapper"> 
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															월세 보증금도 불안한 요즘 시국에… 이런 좋은 서비스가 있다니, 빨리 더 소문나서 코스노미가 더욱 가까이 함께 했으면 좋겠어요.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															김*연
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															다른 부동산에서 보증금 5000만 원 이였는데, 코스노미가 무보증에 입주 시켜줬어요
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															박*연
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															신축 아파트에 입주하면서, 보증금 없이 이렇게 입주가 가능할 줄은 상상도 못했어요…
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															강*식
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															반신반의하면서 투어 신청을 해봤는데, 너무 좋은 조건으로 입주까지 완료 했습니다. 
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															이*민
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															보증금이 부족해서 가 아니고, 굳이 이제는 보증금을 내야 할 이유를 모르겠네요. 지인분들께 소개 많이 하겠습니다.!
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															조*현
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															생각보다 엄청 넓은 아파트를 생각지도 못한 무보증에 입주를 해서 정말 퇴근길이 즐겁습니다. 
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															이*석
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															코스노미 사무실에 방문하여 상담받았는데, 전문성과 이런 보증서 발급 서비스가 있다는 것에 두 번 놀랐습니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															박*석
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															이런 좋은 보증상품을 왜 이제야 알았나 몰라요.. 번창하세요!
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															이*운
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															보증금 2억 아파트를 1억 혹은 무보증에 입주가 가능하면 믿으시겠어요?
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															강*현
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															보증금이 부족해서 아파트는 상상도 못했는데… 진짜 이건 누구나 다 알아야 하는 좋은 보증상품이라 생각합니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															마*영
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															전세? 보증금 대출? 이제 필요가 있을까요? 꽁돈 번 기분이에요…
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															김*미
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															원하는 아파트 꿈에만 그리다 이렇게 좋은 조건으로 입주해서 너무 감사합니다. 상담, 투어 정말 고생하셨습니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															정*숙
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="control_con w_con">
+									<div class="info13_slide_btn prev info13_slide_btn_prev">
+										<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_slide_btn_prev.png" alt="슬라이드 이전 버튼" class="fx" />
+									</div>
+
+									<div class="info13_slide_btn next info13_slide_btn_next">
+										<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_slide_btn_next.png" alt="슬라이드 다음 버튼" class="fx" />
+									</div>
+								</div>
+							</div>
+
+							<div class="tab_con info13_tab02_con">
+								<div class="slide_con">
+									<div class="swiper info13_slide02">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide info13_slide_div02">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															원하는 아파트 꿈에만 그리다 이렇게 좋은 조건으로 입주해서 너무 감사합니다. 상담, 투어 정말 고생하셨습니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															정*숙
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															전세? 보증금 대출? 이제 필요가 있을까요? 꽁돈 번 기분이에요…
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															김*미
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															보증금이 부족해서 아파트는 상상도 못했는데… 진짜 이건 누구나 다 알아야 하는 좋은 보증상품이라 생각합니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															마*영
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															보증금 2억 아파트를 1억 혹은 무보증에 입주가 가능하면 믿으시겠어요?
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															강*현
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															생각보다 엄청 넓은 아파트를 생각지도 못한 무보증에 입주를 해서 정말 퇴근길이 즐겁습니다. 
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															이*석
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide info13_slide_div">
+												<div class="contents_con">
+													<div class="text_con">
+														<span>
+															코스노미 사무실에 방문하여 상담받았는데, 전문성과 이런 보증서 발급 서비스가 있다는 것에 두 번 놀랐습니다.
+														</span>
+													</div>
+
+													<div class="name_con">
+														<span>
+															박*석
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="control_con w_con">
+									<div class="info13_slide_btn prev info13_slide_btn_prev02">
+										<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_slide_btn_prev.png" alt="슬라이드 이전 버튼" class="fx" />
+									</div>
+
+									<div class="info13_slide_btn next info13_slide_btn_next02">
+										<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_slide_btn_next.png" alt="슬라이드 다음 버튼" class="fx" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info11_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info11_con_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info11_con_img02.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info11_con_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info12_con">
+				<div class="contents_con">
+					<div class="img_con">
+						<div class="img_div">
+							<div class="img img01">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info12_con_img01.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info12_con_img01.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+
+						<div class="img_div">
+							<div class="img img02">
+								<img src="/pf/pf/cosnomy_apartment/img/main_info12_con_img02.png" alt="컨텐츠 이미지" class="fx w_img" />
+								<img src="/pf/pf/cosnomy_apartment/img/m_main_info12_con_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info07_con go_info07_con">
+				<div class="contents_con">
+					<div class="title_con">
+						<div class="text01_con">
+							<span>
+								완벽주의 코스노미PM을 통한
+							</span>
+						</div>
+
+						<div class="text02_con">
+							<span>
+								전문중개 컨설팅 <br class="w_br "/>
+								<font class="color_text">신청하기!</font> <br />
+								대표번호 1660-1055
+							</span>
+						</div>
+					</div>
+
+					<div class="write_con">
+						<form id="frmConsult" name="frmConsult" autocomplete="off">
+							<input type="hidden" name="mode" value="consult_apart" />
+							<input type="hidden" name="code" value="ap" />
+							<div class="input_con">
+								<ul>
+									<li>
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													문의유형
+												</span>
+											</div>
+
+											<div class="info_con">
+												<div class="type_con">
+													<ul>
+														<li>
+															<label>
+																<input type="radio" name="type" value="001" checked="checked">
+																<span>
+																	임차인
+																</span>
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="radio" name="type" value="002">
+																<span>
+																	매물 중개 의뢰
+																</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!--임차인-->
+									<li class="write_type01">
+										<div class="list_div fl">
+											<div class="title_con">
+												<span>
+													성함 <font class="dot">*</font>
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="name_1" class="input" />
+											</div>
+										</div>
+
+										<div class="list_div fr">
+											<div class="title_con">
+												<span>
+													연락처 <font class="dot">*</font>
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="tel" name="tel_1" maxlength="13" class="input tel_input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type01">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													희망지역
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="wish_place" class="input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type01">
+										<div class="list_div fl">
+											<div class="title_con">
+												<span>
+													희망 아파트(명칭)
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="resident" class="input" />
+											</div>
+										</div>
+
+										<div class="list_div fr">
+											<div class="title_con">
+												<span>
+													필요면적(전용 평수 기준)
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="required_area_1" class="input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type01">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													문의(요청)내용
+												</span>
+											</div>
+
+											<div class="info_con">
+												<div class="textarea_con">
+													<textarea name="content" class="textarea"></textarea>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!--임차인-->
+									<!----------//---------->
+									<!--임대인-->
+									<li class="write_type02">
+										<div class="list_div fl">
+											<div class="title_con">
+												<span>
+													성함 <font class="dot">*</font>
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="name_2" class="input" />
+											</div>
+										</div>
+
+										<div class="list_div fr">
+											<div class="title_con">
+												<span>
+													연락처 <font class="dot">*</font>
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="tel" name="tel_2" maxlength="13" class="input tel_input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type02">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													아파트/빌라 주소
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="building_addr" class="input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type02">
+										<div class="list_div fl">
+											<div class="title_con">
+												<span>
+													해당(층)
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="building_floor" class="input" />
+											</div>
+										</div>
+
+										<div class="list_div fr">
+											<div class="title_con">
+												<span>
+													전용면적(평 기준)
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="required_area_2" class="input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type02">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													희망 유형(매매,전세,월세) 
+												</span>
+											</div>
+
+											<div class="info_con">
+												<input type="text" name="rental_fee" class="input" />
+											</div>
+										</div>
+									</li>
+									<li class="write_type02">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													입주 가능일
+												</span>
+											</div>
+
+											<div class="info_con">
+												<div class="select_con">
+													<div class="check_con">
+														<ul class="depth_3">
+															<li>
+																<label>
+																	<input type="radio" name="move_in" value="001" checked="checked">
+																	<span>
+																		공실
+																	</span>
+																</label>
+															</li>
+															<li>
+																<label>
+																	<input type="radio" name="move_in" value="002">
+																	<span>
+																		협의
+																	</span>
+																</label>
+															</li>
+															<li>
+																<label>
+																	<input type="radio" name="move_in" value="999">
+																	<span>
+																		기타
+																	</span>
+																</label>
+															</li>
+														</ul>
+													</div>
+
+													<div class="input_con">
+														<input type="text" name="move_in_etc" placeholder="기타 내용을 입력해주세요." class="input" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="write_type02">
+										<div class="list_div">
+											<div class="title_con">
+												<span>
+													등록할 건물의 소유주가 맞나요?
+												</span>
+											</div>
+
+											<div class="info_con">
+												<div class="select_con">
+													<div class="check_con">
+														<ul class="depth_2">
+															<li>
+																<label>
+																	<input type="radio" name="owner" value="001" checked="checked">
+																	<span>
+																		네, 임대인이 맞습니다.
+																	</span>
+																</label>
+															</li>
+															<li>
+																<label>
+																	<input type="radio" name="owner" value="002">
+																	<span>
+																		아니요. 임차인 입니다.													
+																	</span>
+																</label>
+															</li>
+															<li>
+																<label>
+																	<input type="radio" name="owner" value="003">
+																	<span>
+																		건물 관리인 입니다.														
+																	</span>
+																</label>
+															</li>
+															<li>
+																<label>
+																	<input type="radio" name="owner" value="999">
+																	<span>
+																		기타
+																	</span>
+																</label>
+															</li>
+														</ul>
+													</div>
+
+													<div class="input_con">
+														<input type="text" name="owner_etc" placeholder="기타 내용을 입력해주세요." class="input" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!--임대인-->
+								</ul>
+							</div>
+
+							<div class="agree_con">
+								<table cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td align="left" class="check_td">
+												<label class="checkbox_label">
+													<input type="checkbox" name="agree" />
+													<div class="check_icon"></div>
+													<span>
+														개인정보 수집 이용에 관한 동의
+													</span>
+												</label>
+											</td>
+											<td align="right" class="terms_td">
+												<a href="/pf/pf/cosnomy_apartment/member/privacy.html" class="info_popup">
+													개인정보처리방침
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="btn_con">
+								<a href="javascript:checkConsult();" class="a_btn">
+									아파트/빌라 투어신청
+								</a>
+							</div>
+						</form>
+					</div>
+
+					<div class="img_con">
+						<img src="/pf/pf/cosnomy_apartment/img/main_info07_con_img.png" alt="컨텐츠 이미지" class="fx w_img" />
+						<img src="/pf/pf/cosnomy_apartment/img/m_main_info07_con_img.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">		
+		<div class="contents_con">
+			<table cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td align="left" class="text_td">
+							<div class="logo_con">
+								<img src="/pf/pf/cosnomy_apartment/img/copy_logo.png" alt="모바일 카피라이트 로고" class="fx " />
+							</div>
+
+							<div class="text_con">
+								<div class="text_div">
+									<span>
+										법인명: (주)부동산중개법인여의주 <br />
+										대표자: 김상우 <font class="bar m_bar02">│</font><br class="m_br02" />  중개업 등록번호: 제 11560-2022-00101 호 <br />
+										주소: 서울시 영등포구 영등포로150, C동 213호, 214호(당산동1가, 생각공장 당산) <br />
+										대표번호: 1660-1055 <font class="bar">│</font> 이메일: cosnomy@naver.com
+									</span>
+								</div>
+
+								<div class="text_div">
+									<span>
+										ⓒ COSNOMY All Rights Reserved.
+									</span>
+								</div>
+							</div>
+						</td>
+						<td align="left" class="logo_td">
+							<img src="/pf/pf/cosnomy_apartment/img/copy_logo.png" alt="카피라이트 로고" class="fx " />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="quick">
+		<a href="javascript:move_scroll('wrap');" class="top_btn m_con">
+			<img src="/pf/pf/cosnomy_apartment/img/quick_con_top_img.png" alt="컨텐츠 이미지" class="fx w_img" />
+			<img src="/pf/pf/cosnomy_apartment/img/m_quick_con_top_img.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+		</a>
+
+		<a href="javascript:move_scroll('go_info07_con');" class="call_btn">
+			<img src="/pf/pf/cosnomy_apartment/img/quick_con_img.png" alt="컨텐츠 이미지" class="fx w_img" />
+			<img src="/pf/pf/cosnomy_apartment/img/m_quick_con_img.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+			<img src="/pf/pf/cosnomy_apartment/img/m_quick_con_img02.png" alt="모바일 컨텐츠 이미지" class="fx m_img on" />
+		</a>
+
+		<a href="javascript:move_scroll('wrap');" class="top_btn w_con">
+			<img src="/pf/pf/cosnomy_apartment/img/quick_con_top_img.png" alt="컨텐츠 이미지" class="fx w_img" />
+			<img src="/pf/pf/cosnomy_apartment/img/m_quick_con_top_img.png" alt="모바일 컨텐츠 이미지" class="fx m_img" />
+		</a>
+	</div>
+		
+</div>
+
+<script type="text/javascript" language="javascript">
+	// 헤더 이벤트
+	var prevScrollTop = 0;
+	document.addEventListener("scroll", function(){
+		var nowScrollTop = $(window).scrollTop();
+		
+		if(nowScrollTop > prevScrollTop){
+			$("#header").addClass("active");
+		}else {
+			$("#header").removeClass("active");
+		}
+		prevScrollTop = nowScrollTop;
+	});
+
+	// info02 애니메이션
+	function info02_ani(){
+		const img = gsap.utils.toArray("#main_con > .info02_con > .contents_con > .img_con > .img_div .img");
+
+		gsap.from(img, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+			scrollTrigger: {
+				trigger: img,
+				start: "top 70%",
+				end: "bottom center",
+			}
+		});
+	}
+
+	// info03 애니메이션
+	function info03_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info03_con");
+		const img01 = gsap.utils.toArray("#main_con > .info03_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info03_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			x: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			x: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info04 애니메이션
+	function info04_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info04_con");
+		const img01 = gsap.utils.toArray("#main_con > .info04_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info04_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info05 애니메이션
+	function info05_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info05_con");
+		const img01 = gsap.utils.toArray("#main_con > .info05_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info05_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info06 애니메이션
+	function info06_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info06_con");
+		const img01 = gsap.utils.toArray("#main_con > .info06_con > .contents_con > .img_con > .contents_con:first-child > .img_div .img02");
+		const img02 = gsap.utils.toArray("#main_con > .info06_con > .contents_con > .img_con > .contents_con:last-child");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info07 애니메이션
+	function info07_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info07_con");
+		const title = gsap.utils.toArray("#main_con > .info07_con > .contents_con > .title_con > div");
+		const content = gsap.utils.toArray("#main_con > .info07_con > .contents_con > .write_con > form");
+						
+		tl.from(title, {
+			x: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		})
+		tl.from(content, {
+			x: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4")
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info08 애니메이션
+	function info08_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info08_con");
+		const img01 = gsap.utils.toArray("#main_con > .info08_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info08_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info09 애니메이션
+	function info09_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info09_con");
+		const img01 = gsap.utils.toArray("#main_con > .info09_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info09_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info10 애니메이션
+	function info10_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info10_con");
+		const img01 = gsap.utils.toArray("#main_con > .info10_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info10_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info11 애니메이션
+	function info11_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info11_con");
+		const img01 = gsap.utils.toArray("#main_con > .info11_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info11_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info12 애니메이션
+	function info12_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info12_con");
+		const img01 = gsap.utils.toArray("#main_con > .info12_con > .contents_con > .img_con > .img_div .img01");
+		const img02 = gsap.utils.toArray("#main_con > .info12_con > .contents_con > .img_con > .img_div .img02");
+
+		tl.from(img01, {
+			x: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		});
+		tl.from(img02, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4");
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	// info13 애니메이션
+	function info13_ani(){
+		const tl = gsap.timeline();
+		const section = gsap.utils.toArray("#main_con > .info13_con");
+		const title = gsap.utils.toArray("#main_con > .info13_con > .contents_con > .title_con");
+		const nav = gsap.utils.toArray("#main_con > .info13_con > .contents_con > .nav_con > ul");
+		const slide = gsap.utils.toArray("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con > .slide_con");
+		
+		tl.from(title, {
+			y: -50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		})
+		tl.from(nav, {
+			y: 30,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+		}, "-=0.4")
+		tl.from(slide, {
+			y: 50,
+			duration: 0.8,
+			ease: "power1",
+			autoAlpha: 0,
+			onComplete: ()=>{
+				setTimeout(function(){
+					info13_slide.slideTo(3);
+					info13_slide_autoplay();
+					console.log('시작')
+				}, 800)
+			}
+		}, "-=0.4")
+		ScrollTrigger.create({
+			trigger: section,
+			animation: tl,
+			start: "top center",
+			end: "bottom center",
+		});
+	}
+
+	$(document).ready(function(){
+		// info01 슬라이드
+		if( $(".info01_slide_div").length > 1 ){
+			var info01_slide = new Swiper(".info01_slide", {
+				slidesPerView: "auto",
+				effect: "fade",
+				autoplay: {
+					delay: 4000,
+					disableOnInteraction: false,
+				},
+				speed: 1000,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		}else{
+			var info01_slide = new Swiper(".info01_slide", {
+				slidesPerView: "auto",
+				effect: "fade",
+				speed: 1000,
+				loop: false,
+				simulateTouch: false,
+				allowTouchMove: false,
+			});
+		}
+
+		// 화면 너비
+		if (window.innerWidth > 1024) {	
+			// 약관팝업
+			$(".info_popup").colorbox({iframe:true, width:"700px", height:"500px"});
+
+			// 푸터 예외처리
+			$("#footer").css("padding-bottom","0px");
+
+			// 퀵 예외처리
+			$("#quick .call_btn").attr("href", "javascript:move_scroll('go_info07_con');");
+
+			// 탑버튼 예외처리
+			$("#quick > a.top_btn").css("bottom", "0");
+		}else{
+			// 약관팝업
+			$(".info_popup").colorbox({iframe:true, width:"95%", height:"55%"});
+
+			// 푸터 예외처리
+			$("#footer").css("padding-bottom",$("#quick .call_btn").innerHeight()+"px");
+
+			// 퀵 예외처리
+			var filter = "win16|win32|win64|mac";
+			if(navigator.platform){
+				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+					$("#quick .call_btn").attr("href", "tel:1660-1055");
+				}else{
+					$("#quick .call_btn").attr("href", "javascript:alert('전화상담은 모바일 기기에서만 이용 가능하십니다.');");
+				}
+			}
+
+			// 탑버튼 예외처리
+			$("#quick > a.top_btn").css("bottom", ($("#quick .call_btn").innerHeight() + 15) + "px");
+		}
+
+		// GSAP 반응형
+		ScrollTrigger.matchMedia({
+			// pc
+			"(min-width: 1025px)": function () {
+				// info02 애니메이션
+				info02_ani();
+
+				// info03 애니메이션
+				info03_ani();
+
+				// info04 애니메이션
+				info04_ani();
+
+				// info05 애니메이션
+				info05_ani();
+
+				// info06 애니메이션
+				info06_ani();
+
+				// info07 애니메이션
+				info07_ani();
+
+				// info08 애니메이션
+				info08_ani();
+
+				// info09 애니메이션
+				info09_ani();
+
+				// info10 애니메이션
+				info10_ani();
+
+				// info11 애니메이션
+				info11_ani();
+
+				// info12 애니메이션
+				info12_ani();
+
+				// info13 애니메이션
+				info13_ani();
+			},
+
+			// mobile
+			"(max-width:1024px)": function () {
+				// info02 애니메이션
+				info02_ani();
+
+				// info03 애니메이션
+				info03_ani();
+
+				// info04 애니메이션
+				info04_ani();
+
+				// info05 애니메이션
+				info05_ani();
+
+				// info06 애니메이션
+				info06_ani();
+
+				// info07 애니메이션
+				info07_ani();
+
+				// info08 애니메이션
+				info08_ani();
+
+				// info09 애니메이션
+				info09_ani();
+
+				// info10 애니메이션
+				info10_ani();
+
+				// info11 애니메이션
+				info11_ani();
+
+				// info12 애니메이션
+				info12_ani();
+
+				// info13 애니메이션
+				info13_ani();
+			},
+		});
+	});
+
+	// 문의유형 선택
+	$(document).on("click","input[name='type']",function() {
+		if( $(this).val() == "001" ){
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > .write_type01").css("display","block");
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > .write_type02").css("display","none");
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .btn_con .a_btn").html("아파트/빌라 투어신청");
+		}else{
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > .write_type01").css("display","none");
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > .write_type02").css("display","block");
+			$("#main_con > .info07_con > .contents_con > .write_con > form > .btn_con .a_btn").html("빠른 매물 접수");
+		}
+
+		$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .input").val("");
+		$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .textarea_con .textarea").val("");
+		$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .select_con > .check_con > ul > li:nth-child(1) label > input").prop("checked","checked");
+		$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .select_con > .input_con").css("display","none");
+	});
+	
+	// 연락처
+	$(document).on("keyup", ".tel_input", function() { 
+		$(this).val( $(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/,"$1-$2-$3").replace("--", "-") );
+	});
+
+	// 임대인 (매물 중개 의뢰) - 입주 가능일
+	$(document).on("click","input[name='move_in']",function() {
+		if( $(this).val() == "999" ){
+			$(this).closest(".select_con").find(".input_con").css("display","block");
+		}else{
+			$(this).closest(".select_con").find(".input_con").css("display","none");
+		}
+		//$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .select_con > .input_con .input").val("");
+	});
+
+	// 임대인 (매물 중개 의뢰) - 등록할 건물의 소유주가 맞나요?
+	$(document).on("click","input[name='owner']",function() {
+		if( $(this).val() == "999" ){
+			$(this).closest(".select_con").find(".input_con").css("display","block");
+		}else{
+			$(this).closest(".select_con").find(".input_con").css("display","none");
+		}
+		//$("#main_con > .info07_con > .contents_con > .write_con > form > .input_con > ul > li .list_div > .info_con .select_con > .input_con .input").val("");
+	});
+
+	// 스크롤 이동
+	function move_scroll(item_class){
+		var item = $("."+item_class);
+		var offset_item = item.offset();
+		var position_top = offset_item.top;
+		
+		$('html,body').animate({scrollTop:position_top}, 500);
+	}
+
+	// 리사이즈 예외처리
+	var resizeTimer;
+
+	// info13 슬라이드, 슬라이드02
+	var info13_slide = null;
+	var info13_slide02 = null;
+
+	// info13 슬라이드
+	function resize_info13_slide(){
+		if(info13_slide){
+			info13_slide.destroy();
+			info13_slide = null;
+		}
+		info13_slide = new Swiper(".info13_slide", {
+			slidesPerView: 2,
+			centeredSlides: true,
+			spaceBetween: "3%",
+			speed: 1000,
+			loop: true,
+			navigation: {
+				nextEl: ".info13_slide_btn_next",
+				prevEl: ".info13_slide_btn_prev",
+			},
+			watchOverflow: false,
+			breakpoints: {
+				1025: {
+					slidesPerView: 3,
+					spaceBetween: 0,
+				},
+			},
+		});
+	}
+
+	// info13 슬라이드02
+	function resize_info13_slide02(){
+		if(info13_slide02){
+			info13_slide02.destroy();
+			info13_slide02 = null;
+		}
+		info13_slide02 = new Swiper(".info13_slide02", {
+			slidesPerView: 2,
+			centeredSlides: true,
+			spaceBetween: "3%",
+			speed: 1000,
+			loop: true,
+			navigation: {
+				nextEl: ".info13_slide_btn_next02",
+				prevEl: ".info13_slide_btn_prev02",
+			},
+			watchOverflow: false,
+			breakpoints: {
+				1025: {
+					slidesPerView: 3,
+					spaceBetween: 0,
+				},
+			},
+		});
+	}
+
+	// info13 슬라이드 자동재생
+	function info13_slide_autoplay(){
+		//console.log('시작');
+		info13_slide.slideTo(3);
+		info13_slide.params.autoplay.delay = 3000;
+		info13_slide.params.autoplay.disableOnInteraction = false;
+		info13_slide.autoplay.start();
+
+		info13_slide02.slideTo(3);
+		info13_slide02.params.autoplay.delay = 3000;
+		info13_slide02.params.autoplay.disableOnInteraction = false;
+		info13_slide02.autoplay.start();
+	}
+
+	// info13 슬라이드 탭 이벤트
+	$(document).on("click","#main_con > .info13_con > .contents_con > .nav_con > ul > li",function(){
+		$("#main_con > .info13_con > .contents_con > .nav_con > ul > li").each(function(){
+			$(this).removeClass("on");
+		});
+
+		$(this).addClass("on");
+
+		$("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con").hide();
+		$("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con."+$(this).attr("val")).show();
+		
+		// info13 슬라이드 탭 이벤트 예외 처리
+		if($("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con.info13_tab01_con").css("display") == "block"){
+			// 화면 너비 설정
+			if (window.innerWidth > 1024) {	
+				// 이전 슬라이드 인스턴스 파괴
+				if (info13_slide) {
+					info13_slide.destroy(true, true);
+					info13_slide = null;
+				}
+
+				resize_info13_slide();
+				info13_slide.autoplay.start();
+			}else{
+				// 이전 슬라이드 인스턴스 파괴
+				if (info13_slide) {
+					info13_slide.destroy(true, true);
+					info13_slide = null;
+				}
+
+				resize_info13_slide();
+				info13_slide.autoplay.start();
+			}
+		}else if($("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con.info13_tab02_con").css("display") == "block"){
+			// 화면 너비 설정
+			if (window.innerWidth > 1024) {	
+				// 이전 슬라이드02 인스턴스 파괴
+				if (info13_slide02) {
+					info13_slide02.destroy(true, true);
+					info13_slide02 = null;
+				}
+
+				resize_info13_slide02();
+				info13_slide02.autoplay.start();
+			}else{
+				// 이전 슬라이드02 인스턴스 파괴
+				if (info13_slide02) {
+					info13_slide02.destroy(true, true);
+					info13_slide02 = null;
+				}
+
+				resize_info13_slide02();
+				info13_slide02.autoplay.start();
+			}
+		}
+	});
+
+	// 화면 리사이징
+	$(window).resize(function(){
+		// 화면 너비
+		if (window.innerWidth > 1024) {	
+			// 약관팝업
+			$(".info_popup").colorbox({iframe:true, width:"700px", height:"500px"});
+
+			// 푸터 예외처리
+			$("#footer").css("padding-bottom","0px");
+
+			// 퀵 예외처리
+			$("#quick .call_btn").attr("href", "javascript:move_scroll('go_info07_con');");
+
+			// 탑버튼 예외처리
+			$("#quick > a.top_btn").css("bottom", "0");
+		}else{
+			// 약관팝업
+			$(".info_popup").colorbox({iframe:true, width:"95%", height:"55%"});
+
+			// 푸터 예외처리
+			$("#footer").css("padding-bottom",$("#quick .call_btn").innerHeight()+"px");
+
+			// 퀵 예외처리
+			var filter = "win16|win32|win64|mac";
+			if(navigator.platform){
+				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+					$("#quick .call_btn").attr("href", "tel:1660-1055");
+				}else{
+					$("#quick .call_btn").attr("href", "javascript:alert('전화상담은 모바일 기기에서만 이용 가능하십니다.');");
+				}
+			}
+
+			// 탑버튼 예외처리
+			$("#quick > a.top_btn").css("bottom", ($("#quick .call_btn").innerHeight() + 15) + "px");
+		}
+
+		clearTimeout(resizeTimer);
+
+		// 리사이즈 타이머
+		resizeTimer = setTimeout(function() {
+			// info13 슬라이드 탭 이벤트 예외 처리
+			if($("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con.info13_tab01_con").css("display") == "block"){
+				// 화면 너비 설정
+				if (window.innerWidth > 1024) {	
+					// 이전 슬라이드 인스턴스 파괴
+					if (info13_slide) {
+						info13_slide.destroy(true, true);
+						info13_slide = null;
+					}
+
+					resize_info13_slide();
+					resize_info13_slide02();
+				}else{
+					// 이전 슬라이드 인스턴스 파괴
+					if (info13_slide) {
+						info13_slide.destroy(true, true);
+						info13_slide = null;
+					}
+
+					resize_info13_slide();
+					resize_info13_slide02();
+				}
+			}else if($("#main_con > .info13_con > .contents_con > .slide_con > .contents_con > .tab_con.info13_tab02_con").css("display") == "block"){
+				// 화면 너비 설정
+				if (window.innerWidth > 1024) {	
+					// 이전 슬라이드02 인스턴스 파괴
+					if (info13_slide02) {
+						info13_slide02.destroy(true, true);
+						info13_slide02 = null;
+					}
+
+					resize_info13_slide();
+					resize_info13_slide02();
+				}else{
+					// 이전 슬라이드02 인스턴스 파괴
+					if (info13_slide02) {
+						info13_slide02.destroy(true, true);
+						info13_slide02 = null;
+					}
+
+					resize_info13_slide();
+					resize_info13_slide02();
+				}
+			}
+		}, 200);
+	});
+
+    function checkConsult(){
+		var f = document.frmConsult;
+		
+		if(f.type.value == '001'){
+			if(f.name_1.value==''){ alert('성함을 입력해 주세요.'); f.name_1.focus(); return; }
+			if(f.tel_1.value==''){ alert('연락처를 입력해 주세요.'); f.tel_1.focus(); return; }
+		}
+		else{
+			if(f.name_2.value==''){ alert('성함을 입력해 주세요.'); f.name_2.focus(); return; }
+			if(f.tel_2.value==''){ alert('연락처를 입력해 주세요.'); f.tel_2.focus(); return; }
+		}
+		if(!f.agree.checked){ alert('개인정보 수집 이용 동의에 체크해 주세요.'); return; }
+		
+
+		alert('신청이 완료되었습니다.');
+		location.href="/pf/pf/cosnomy_apartment/"
+	}
+</script>
+
+</body>
+</html>
