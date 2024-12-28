@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>더스윙제트</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0; target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="icon" type="image/svg+xml" href="/pf/pf/ts_concern/img/favicon.svg">
+
+<!--url 전송시-->
+<meta property="og:url" content="<?=$url?>">
+<meta property="og:title" content="더스윙제트">  
+<meta property="og:type" content="website">
+<meta property="og:image" content="/pf/pf/ts_concern/img/url_img.png">
+<meta property="og:description" content="더스윙제트">
+<!--url 전송시-->
+
+<!--url 전송시02-->
+<meta name="description" content="더스윙제트">
+<meta name="keywords" content="더스윙제트">
+
+<link rel="canonical" href="<?=$url?>">
+<!--url 전송시02-->
+
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/common_all.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/jquery.rwdImageMaps.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/CustomEase.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+		$('img[usemap]').rwdImageMaps();
+
+        // GSAP
+		gsap.registerPlugin(CustomEase);
+	});
+</script>
+
+</head>
+<body>
+
+<div id="wrap">
+    <div id="header">
+        <div class="contents_con">
+            <div class="logo_con" onclick="location.href='/pf/pf/ts_concern/'">
+                <div class="img_con">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="26" viewBox="0 0 139 26" fill="none">
+                        <path d="M67.8667 4.75511L64.2315 0.272711C64.1432 0.164089 64.2201 0 64.3601 0H94.761C94.9631 0 95.1169 0.186044 95.0767 0.387111L94.8609 1.49529C94.8402 1.60044 94.7943 1.69751 94.7278 1.78071L77.2902 23.3099C77.2041 23.4162 77.2787 23.5745 77.4153 23.5745H89.1069C89.3032 23.5745 89.4891 23.4855 89.6143 23.333L91.2981 21.2853C91.3647 21.2044 91.4875 21.2056 91.5529 21.2853L95.157 25.7296C95.2443 25.8382 95.1685 26 95.0296 26H64.6161C64.4129 26 64.2602 25.8128 64.3004 25.6129L64.5139 24.5382C64.5346 24.4342 64.5805 24.3372 64.6459 24.2563L82.1776 2.69129C82.2637 2.58498 82.1891 2.42667 82.0525 2.42667H70.4401C70.2426 2.42667 70.0555 2.51449 69.9304 2.66702L68.1238 4.75627C68.0561 4.83716 67.9332 4.836 67.8678 4.75511H67.8667ZM14.0033 17.405L4.82081 18.0151V7.62551H11.9372V3.46667H0V22.3796L14.0033 21.5095V17.4061V17.405ZM9.29728 14.0978H14.4624V23.1111H19.2832V2.88889H14.4624V9.93778H9.29728V14.0978ZM20.6606 22.7644H40.6325V18.72H20.6606V22.7644ZM21.2345 14.7934C25.773 14.6848 28.8422 12.7261 30.6362 10.2683C32.4303 12.7273 35.4984 14.6848 40.0586 14.7934V10.9258C35.5064 10.578 33.057 7.31351 33.057 4.87529V3.00329H28.2362V4.87529C28.2362 7.31236 25.7867 10.5768 21.2345 10.9258V14.7934ZM41.3212 14.56H45.7965L45.4292 16.0148C43.7684 16.2968 42.4736 17.7748 42.4736 19.5982C42.4736 21.5962 44.0266 23.2255 45.9469 23.2255H57.751C59.6782 23.2255 61.2369 21.5904 61.2369 19.5855C61.2369 17.5806 59.6782 15.9455 57.751 15.9455H49.8231L50.1617 14.5588H55.5529V11.2077H41.3201V14.5588L41.3212 14.56ZM41.801 6.85013C41.801 8.86658 43.4171 10.5156 45.3982 10.5156H50.9778C52.96 10.5156 54.5968 8.86773 54.5968 6.85013C54.5968 4.83253 52.96 3.12 50.9778 3.12H45.3982C43.416 3.12 41.801 4.76782 41.801 6.85013ZM45.8631 6.7704C45.8631 6.33476 46.1443 6.00889 46.4898 6.00889H49.9929C50.3384 6.00889 50.6196 6.33591 50.6196 6.7704C50.6196 7.20489 50.3384 7.51111 49.9929 7.51111H46.4898C46.1443 7.51111 45.8631 7.20604 45.8631 6.7704ZM46.8801 19.4711C46.8801 19.1464 47.0959 18.9511 47.3541 18.9511H56.3071C56.5871 18.9511 56.7811 19.1464 56.7811 19.4711C56.7811 19.7958 56.5871 19.9911 56.3071 19.9911H47.3541C47.0959 19.9911 46.8801 19.7958 46.8801 19.4711ZM56.128 15.4844H61.0636V2.88889H56.128V15.4844ZM98.1379 7.16444H101.007V8.31769C101.007 13.6494 100.336 16.3488 97.9083 17.9804V22.434C100.158 21.476 101.824 19.9946 102.948 17.7308C104.073 19.9957 105.761 21.476 108.009 22.434V17.9804C105.581 16.3476 104.91 13.6494 104.91 8.31769V7.16444H107.78V3.46667H98.1379V7.16444ZM106.058 14.0978H109.042V23.1111H112.83V2.88889H109.042V10.4H106.058V14.0978ZM113.748 23.1111H117.651V2.88889H113.748V23.1111ZM119.028 22.7644H139V18.9511H119.028V22.7644ZM119.832 6.70222H138.426V3.23556H119.832V6.70222ZM138.426 12.2489H124.652V10.9778H138.426V7.62667H119.832V15.9467H138.426V12.2489Z" fill="#FD780F"/>
+                    </svg>
+                </div>
+
+                <div class="text_con">
+                    <span>
+                        와 함께하세요. 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main_con">
+        <div class="info01_con">
+            <div class="bg_con">
+				<div class="header_border"></div>
+
+				<div class="circle"></div>
+
+				<div class="arrow">
+					<div class="contents_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_bg_arrow.svg" alt="화살표 배경" class="fx">
+					</div>
+				</div>
+
+				<div class="money">
+					<div class="contents_con">
+						<div class="money01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money01_1.png" alt="머니 배경01-1" class="fx img01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money01_2.png" alt="머니 배경01-2" class="fx img02 pos">
+						</div>
+
+						<div class="money02">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money02_1.png" alt="머니 배경02-1" class="fx img01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money02_2.png" alt="머니 배경02-2" class="fx img02 pos">
+						</div>
+					</div>
+				</div>
+
+				<div class="emphasis">
+					<img src="/pf/pf/ts_concern/img/info01_title_bg_emphasis.svg" alt="강조 배경" class="fx">
+				</div>
+			</div>
+
+            <div class="contents_con">
+                <div class="title_con">
+					<div class="text01_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_text01_img.svg" alt="스크린골프 사장님" class="fx">
+					</div>
+
+					<div class="text02_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img01.svg" alt="매출이 떨어지셨다구요? 1" class="fx img01">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img02.svg" alt="매출이 떨어지셨다구요? 2" class="fx img02 pos">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img03.svg" alt="매출이 떨어지셨다구요? 3" class="fx img03 pos">
+					</div>
+				</div>
+
+                <div class="contents_con">
+                    <div class="check_con">
+                        <div class="title_con">
+                            <div class="text01_con">
+                                <span>
+                                    지금 바로 <font class="dot">매</font><font class="dot">출</font><font class="dot">고</font><font class="dot">민</font>을 <br class="m_br">선택해보세요!
+                                </span>
+                            </div>
+
+                            <div class="text02_con">
+                                <span>
+                                    (중복 선택 가능)
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="list_con">
+                            <ul>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply01" value="apply01" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                매출<br class="m_br">하락
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply02" value="apply02" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                낙후된 <br class="m_br">기기
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply03" value="apply03" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                떨어지는 <br class="m_br">단골
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply04" value="apply04" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                높은 <br class="m_br">가맹비
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply05" value="apply05" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                부족한 <br class="m_br">본사 지원 
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_div">
+                                        <label class="checkbox_label">
+                                            <input type="checkbox" name="apply06" value="apply06" />
+                                            <div class="check_icon"></div>
+                                            <div class="check_icon check"></div>
+                                            <span>
+                                                신규 <br class="m_br">자금지원
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn_con">
+                        <a href="javascript:apply_popup();" class="btn_animated">
+                            <div class="text_con">
+                                <span>
+                                    고민 해결
+                                </span>
+                            </div>
+
+                            <div class="icon_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="54" viewBox="0 0 36 54" fill="none">
+                                    <g clip-path="url(#clip0_356_3351)">
+                                        <path class="path01" d="M14.72 11.1686L15.9766 18.9777C16.7948 24.0622 19.7725 28.0337 23.5853 29.1263L29.4401 30.8026L23.5853 32.48C19.7736 33.5715 16.7959 37.5441 15.9766 42.6285L14.72 50.4377L13.4634 42.6285C12.6453 37.5441 9.66758 33.5726 5.85479 32.48L0 30.8026L5.85479 29.1263C9.66645 28.0348 12.6441 24.0622 13.4634 18.9777L14.72 11.1686Z" fill="url(#paint0_linear_356_3351)"/>
+                                        <path class="path02" d="M27.6829 0L28.3937  4.41235C28.8559 7.28553 30.5385 9.52968 32.6924 10.1474L36.0001 11.0949L32.6924 12.0424C30.5385 12.659 28.8559 14.9043 28.3937 17.7775L27.6829 22.1898L26.9721 17.7775C26.5099 14.9043 24.8273 12.6601 22.6734 12.0424L19.3657 11.0949L22.6734 10.1474C24.8273 9.53081 26.5099 7.28553 26.9721 4.41235L27.6829 0Z" fill="#FFDF39"/>
+                                        <path class="path03" d="M26.5652 39.056L27.0432 42.0278C27.3551 43.9625 28.4874 45.4745 29.9384 45.8893L32.1668 46.5274L29.9384 47.1656C28.4874 47.5815 27.3539 49.0923 27.0432 51.0271L26.5652 53.9989L26.0871 51.0271C25.7753 49.0923 24.6429 47.5804 23.192 47.1656L20.9635 46.5274L23.192 45.8893C24.6429 45.4734 25.7764 43.9625 26.0871 42.0278L26.5652 39.056Z" fill="url(#paint1_linear_356_3351)"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_356_3351" x1="14.72" y1="31" x2="14.72" y2="50.4377" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDF6F"/>
+                                    <stop offset="1" stop-color="#CAAC42"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_356_3351" x1="26.5652" y1="39.056" x2="26.5652" y2="53.9989" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFCE4F"/>
+                                    <stop offset="1" stop-color="#D79F10"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_356_3351">
+                                    <rect width="36" height="54" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="intro_con">
+						<div class="title_con">
+							<span>
+								유의사항
+							</span>
+						</div>
+
+						<div class="list_con">
+							<ul>
+								<li>
+									<span>
+										개인정보수집 및 이용동의 후 문의 가능합니다.
+									</span>
+								</li>
+								<li>
+									<span>
+										당사 사정에 따라 별도의 고지 없이 변경 및 조기 종료 될 수 있습니다.  
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apply_popup_bg" onclick="javascript:apply_popup();"></div>
+        <div class="apply_popup">
+            <div class="contents_con">
+                <div class="title_con">
+                    <div class="text_con">
+                        <div class="icon_con">
+                            <div class="w_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="54" viewBox="0 0 36 54" fill="none">
+                                    <g clip-path="url(#clip0_356_9262)">
+                                    <path d="M14.72 11.1686L15.9766 18.9777C16.7948 24.0622 19.7725 28.0337 23.5853 29.1263L29.4401 30.8026L23.5853 32.48C19.7736 33.5715 16.7959 37.5441 15.9766 42.6285L14.72 50.4377L13.4634 42.6285C12.6453 37.5441 9.66758 33.5726 5.85479 32.48L0 30.8026L5.85479 29.1263C9.66645 28.0348 12.6441 24.0622 13.4634 18.9777L14.72 11.1686Z" fill="url(#paint0_linear_356_9262)"/>
+                                    <path d="M27.6828 0L28.3936 4.41235C28.8558 7.28553 30.5385 9.52968 32.6923 10.1474L36 11.0949L32.6923 12.0424C30.5385 12.659 28.8558 14.9043 28.3936 17.7775L27.6828 22.1898L26.972 17.7775C26.5098 14.9043 24.8272 12.6601 22.6733 12.0424L19.3657 11.0949L22.6733 10.1474C24.8272 9.53081 26.5098 7.28553 26.972 4.41235L27.6828 0Z" fill="#FFDF39"/>
+                                    <path d="M26.5652 39.056L27.0432 42.0278C27.3551 43.9625 28.4874 45.4745 29.9384 45.8893L32.1669 46.5274L29.9384 47.1656C28.4874 47.5815 27.354 49.0923 27.0432 51.0271L26.5652 53.9989L26.0872 51.0271C25.7753 49.0923 24.643 47.5804 23.192 47.1656L20.9636 46.5274L23.192 45.8893C24.643 45.4734 25.7764 43.9625 26.0872 42.0278L26.5652 39.056Z" fill="url(#paint1_linear_356_9262)"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_356_9262" x1="14.72" y1="31" x2="14.72" y2="50.4377" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDF6F"/>
+                                    <stop offset="1" stop-color="#CAAC42"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_356_9262" x1="26.5652" y1="39.056" x2="26.5652" y2="53.9989" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFCE4F"/>
+                                    <stop offset="1" stop-color="#D79F10"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_356_9262">
+                                    <rect width="36" height="54" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="m_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="35" viewBox="0 0 23 35" fill="none">
+                                    <g clip-path="url(#clip0_54_1679)">
+                                    <path d="M9.40446 7.23889L10.2073 12.3004C10.73 15.5959 12.6324 18.17 15.0684 18.8781L18.8089 19.9646L15.0684 21.0519C12.6331 21.7593 10.7307 24.3341 10.2073 27.6296L9.40446 32.6911L8.60163 27.6296C8.07892 24.3341 6.17651 21.76 3.74056 21.0519L0 19.9646L3.74056 18.8781C6.17579 18.1707 8.07819 15.5959 8.60163 12.3004L9.40446 7.23889Z" fill="url(#paint0_linear_54_1679)"/>
+                                    <path d="M17.6863 0L18.1404 2.85986C18.4357 4.72211 19.5107 6.17664 20.8868 6.57701L23.0001 7.19115L20.8868 7.80529C19.5107 8.20492 18.4357 9.66019 18.1404 11.5224L17.6863 14.3823L17.2322 11.5224C16.9369 9.66019 15.8619 8.20565 14.4858 7.80529L12.3726 7.19115L14.4858 6.57701C15.8619 6.17738 16.9369 4.72211 17.2322 2.85986L17.6863 0Z" fill="#FFDF39"/>
+                                    <path d="M16.9721 25.3141L17.2775 27.2402C17.4768 28.4942 18.2002 29.4742 19.1272 29.7431L20.551 30.1567L19.1272 30.5703C18.2002 30.8399 17.4761 31.8191 17.2775 33.0731L16.9721 34.9993L16.6668 33.0731C16.4675 31.8191 15.7441 30.8391 14.817 30.5703L13.3933 30.1567L14.817 29.7431C15.7441 29.4735 16.4682 28.4942 16.6668 27.2402L16.9721 25.3141Z" fill="url(#paint1_linear_54_1679)"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_54_1679" x1="9.40446" y1="20.0926" x2="9.40446" y2="32.6911" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDF6F"/>
+                                    <stop offset="1" stop-color="#CAAC42"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_54_1679" x1="16.9721" y1="25.3141" x2="16.9721" y2="34.9993" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFCE4F"/>
+                                    <stop offset="1" stop-color="#D79F10"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_54_1679">
+                                    <rect width="23" height="35" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="text_con">
+                            <img src="/pf/pf/ts_concern/img/info01_apply_popup_title_img.svg" alt="고민해결" class="fx">
+                        </div>
+
+                        <div class="icon_con">
+                            <div class="w_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="54" viewBox="0 0 36 54" fill="none">
+                                    <g clip-path="url(#clip0_356_9262)">
+                                    <path d="M14.72 11.1686L15.9766 18.9777C16.7948 24.0622 19.7725 28.0337 23.5853 29.1263L29.4401 30.8026L23.5853 32.48C19.7736 33.5715 16.7959 37.5441 15.9766 42.6285L14.72 50.4377L13.4634 42.6285C12.6453 37.5441 9.66758 33.5726 5.85479 32.48L0 30.8026L5.85479 29.1263C9.66645 28.0348 12.6441 24.0622 13.4634 18.9777L14.72 11.1686Z" fill="url(#paint0_linear_356_9262)"/>
+                                    <path d="M27.6828 0L28.3936 4.41235C28.8558 7.28553 30.5385 9.52968 32.6923 10.1474L36 11.0949L32.6923 12.0424C30.5385 12.659 28.8558 14.9043 28.3936 17.7775L27.6828 22.1898L26.972 17.7775C26.5098 14.9043 24.8272 12.6601 22.6733 12.0424L19.3657 11.0949L22.6733 10.1474C24.8272 9.53081 26.5098 7.28553 26.972 4.41235L27.6828 0Z" fill="#FFDF39"/>
+                                    <path d="M26.5652 39.056L27.0432 42.0278C27.3551 43.9625 28.4874 45.4745 29.9384 45.8893L32.1669 46.5274L29.9384 47.1656C28.4874 47.5815 27.354 49.0923 27.0432 51.0271L26.5652 53.9989L26.0872 51.0271C25.7753 49.0923 24.643 47.5804 23.192 47.1656L20.9636 46.5274L23.192 45.8893C24.643 45.4734 25.7764 43.9625 26.0872 42.0278L26.5652 39.056Z" fill="url(#paint1_linear_356_9262)"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_356_9262" x1="14.72" y1="31" x2="14.72" y2="50.4377" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDF6F"/>
+                                    <stop offset="1" stop-color="#CAAC42"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_356_9262" x1="26.5652" y1="39.056" x2="26.5652" y2="53.9989" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFCE4F"/>
+                                    <stop offset="1" stop-color="#D79F10"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_356_9262">
+                                    <rect width="36" height="54" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="m_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="35" viewBox="0 0 23 35" fill="none">
+                                    <g clip-path="url(#clip0_54_1679)">
+                                    <path d="M9.40446 7.23889L10.2073 12.3004C10.73 15.5959 12.6324 18.17 15.0684 18.8781L18.8089 19.9646L15.0684 21.0519C12.6331 21.7593 10.7307 24.3341 10.2073 27.6296L9.40446 32.6911L8.60163 27.6296C8.07892 24.3341 6.17651 21.76 3.74056 21.0519L0 19.9646L3.74056 18.8781C6.17579 18.1707 8.07819 15.5959 8.60163 12.3004L9.40446 7.23889Z" fill="url(#paint0_linear_54_1679)"/>
+                                    <path d="M17.6863 0L18.1404 2.85986C18.4357 4.72211 19.5107 6.17664 20.8868 6.57701L23.0001 7.19115L20.8868 7.80529C19.5107 8.20492 18.4357 9.66019 18.1404 11.5224L17.6863 14.3823L17.2322 11.5224C16.9369 9.66019 15.8619 8.20565 14.4858 7.80529L12.3726 7.19115L14.4858 6.57701C15.8619 6.17738 16.9369 4.72211 17.2322 2.85986L17.6863 0Z" fill="#FFDF39"/>
+                                    <path d="M16.9721 25.3141L17.2775 27.2402C17.4768 28.4942 18.2002 29.4742 19.1272 29.7431L20.551 30.1567L19.1272 30.5703C18.2002 30.8399 17.4761 31.8191 17.2775 33.0731L16.9721 34.9993L16.6668 33.0731C16.4675 31.8191 15.7441 30.8391 14.817 30.5703L13.3933 30.1567L14.817 29.7431C15.7441 29.4735 16.4682 28.4942 16.6668 27.2402L16.9721 25.3141Z" fill="url(#paint1_linear_54_1679)"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_54_1679" x1="9.40446" y1="20.0926" x2="9.40446" y2="32.6911" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDF6F"/>
+                                    <stop offset="1" stop-color="#CAAC42"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_54_1679" x1="16.9721" y1="25.3141" x2="16.9721" y2="34.9993" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFCE4F"/>
+                                    <stop offset="1" stop-color="#D79F10"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_54_1679">
+                                    <rect width="23" height="35" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_con">
+                        <a href="javascript:apply_popup();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 8L32 32" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M32 8L8 32" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contents_con">
+                    <div class="list_con">
+                        <ul>
+                            <li class="apply01">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img01.svg" alt="매출하락 고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                매출하락 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                새로운 매출 돌파구로, F&B사업을 <br>
+                                                추천드려요!
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                더스윙제트는 추가 가맹 및 투자없이 <br>
+                                                <font class="color_text">F&B 브랜드 파-티 푸드 운영이 가능합니다.</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="apply02">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img02.svg" alt="낙후된 기기  고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                낙후된 기기 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                최식 타석 시스템
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                <font class="color_text">최신 타석장비일체 <br class="m_br">반값 할인 적용 중!(선착순)</font> <br>
+                                                최신 게임 소프트웨어와 리얼감 있는 그래픽을 갖춘 <br class="w_br">
+                                                타석포함 시스템을 가맹없이 설치도 가능합니다.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="apply03">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img03.svg" alt="떨어지는 단골 고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                떨어지는 단골 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                게임이 재미없어서 단골이 떨어지나요? 
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                최신 타석 시스템이 제공하는 최신 게임 소프트웨어와 리얼감 있는 그래픽, 그리고 F&B 운영을 통해 재방문 유도하는 <font class="color_text">더스윙제트라면 단골이 늘어납니다.</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="apply04">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img04.svg" alt="높은 가맹비 고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                높은 가맹비 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                가맹비가 아까우셨죠?
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                더스윙제트는 <font class="color_text">선착순30호점에 한해 가맹비 1,000만원이 무료입니다.</font> <br>또한 최신 기기지만, 가맹없이 설치만 하는 설치점도 가능합니다.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="apply05">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img05.svg" alt="부족한 본사 지원 고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                부족한 본사 지원 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                가맹점 본사의 지원이 부족하셨어요?
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                <font class="color_text">신규창업시 마케팅 300만원 지원은 기본!</font> <br>
+                                                창업만 지원하는게 아니라, 운영도 꼼꼼히 지원합니다.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="apply06">
+                                <div class="list_div">
+                                    <div class="img_con">
+                                        <img src="/pf/pf/ts_concern/img/info01_apply_popup_list_img06.svg" alt="신규 자금지원 고민해결" class="fx">
+                                    </div>
+
+                                    <div class="text_con">
+                                        <div class="text01_con">
+                                            <span>
+                                                신규 자금지원 
+                                            </span>
+                                        </div>
+
+                                        <div class="text02_con">
+                                            <span>
+                                                신규로 창업할까 하는데 자금지원이 필요하세요?
+                                            </span>
+                                        </div>
+
+                                        <div class="text03_con">
+                                            <span>
+                                                무이자할부 대출, 최신 타석 시스템 외의 <br class="w_br">운영에 필요한 장비의 렌탈까지 <font class="color_text">빈틈없이 상담합니다.</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="text_con">
+                        <span>
+                            자세한 사항은 <br>
+                            상담문의 신청을 하세요!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="footer">
+		<div class="contents_con">
+			<div class="logo_con">
+				<span>
+					주식회사 더스윙골프
+				</span>
+			</div>
+
+			<div class="text_con">
+				<div class="text01_con">
+					<span>
+						사업자등록번호 : 403-87-01586  ㅣ  대표자 : 최재호  <font class="bar w_bar">ㅣ</font>  <br class="m_br">서울 강남구 논현로134길 10, 6층
+					</span>
+				</div>
+
+				<div class="text02_con">
+					<div class="title_con">
+						<span>
+							대표번호
+						</span>
+					</div>
+
+					<div class="btn_con">
+						<a href="javascript:;" class="call_btn">
+							1855-0753
+						</a>
+					</div>
+				</div>
+
+				<div class="text03_con">
+					<span>
+						COPYRIGHT© THE SWING Z  ALL RIGHTS RESERVED. 
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="bottom_quick" class="go_bottom_quick">
+		<div class="contents_con">
+			<form name="frmFooter" id="frmFooter" action="" method="" autocomplete="off">
+				<input type="hidden" name="mode" value="footer" />
+				<div class="write_con">
+					<div class="title_con">
+						<div class="text01_con">
+							<span>
+								상/담/문/의
+							</span>
+						</div>
+
+						<div class="text02_con">
+							<a href="" class="a_btn call_btn">
+								<img src="/pf/ts_concern/img/agree_popup_call_icon.svg" alt="컨텐츠 이미지" class="fx" />
+
+								<span>
+									1855-0753
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="input_con">
+						<ul>
+							<li>
+								<input type="text" name="name" placeholder="이름" class="input" />
+							</li>
+							<li>
+								<input type="tel" name="tel" placeholder="연락처" maxlength="13" class="input tel_input" />
+							</li>
+						</ul>
+					</div>
+
+					<div class="agree_con">
+						<a href="javascript:agree_step03();" class="a_btn">
+							<input type="hidden" name="agree" value="N" />
+							<div class="check_icon"></div>
+							<span>
+								개인정보수집 및 이용동의
+							</span>
+						</a>
+					</div>
+
+					<div class="btn_con">
+						<a href="" class="a_btn">
+							상담문의
+						</a>
+					</div>
+				</div>
+			</form>
+
+			<div class="agree_popup_con_bg"></div>
+			<div class="agree_popup_con">
+				<div class="contents_con">
+					<div class="close_btn">
+						<a href="javascript:agree_step03();">
+							<img  src="/pf/ts_concern/img/agree_popup_close_btn.svg" alt="닫기 버튼" class="fx" />
+						</a>
+					</div>
+
+					<div class="title_con">
+						<span>
+							개인정보수집 및 이용동의
+						</span>
+					</div>
+
+					<div class="posts_con">
+						<div class="scroll_con">
+							<div class="contents_con">
+								<span>
+									더스윙제트는 다음과 같이 개인정보를 수집 및 이용하며, 수집한 개인정보는 가맹 삼담 및 서비스를 위해 활용합니다. <br />
+									■ 수집하는 개인정보 항목 <br />
+									◇ 필수 : 이름, 연락처, 이메일, 점포유무, 쿠키 <br />
+									◇ 선택 : 희망지역, 희망형태, 유입경로, 문의내용 <br />
+									■ 개인정보 수집 목적 <br />
+									- 원활한 창업 및 가맹 상담 <br />
+									- 서비스 이용 및 가맹 정보 등의 이메일, SMS 전송 및 유선 연락 <br />
+									■ 개인정보 보유 및 이용 기간 <br />
+									- 접수 기간 및 상담 완료 후 1년 <br />
+									고객은 본 개인정보 수집 및 이용 동의를 거부할 수 있으며, 동의 거부 시 가맹 문의 및 상담 등 서비스 이용에 제한이 있을 수 있습니다.
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn_con">
+						<a href="" class="a_btn">
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// 고민 해결 버튼 클릭 시
+	function apply_popup(){
+		var body = $("body");
+		var applyPopup = $("#main_con > .apply_popup");
+		var applyPopupBg = $("#main_con > .apply_popup_bg");
+		var applyPopupScroll = $("#main_con > .apply_popup > .contents_con > .contents_con > .list_con > ul");
+		var checkboxes = $("#main_con > .info01_con > .contents_con > .contents_con > .check_con > .list_con > ul > li > .list_div > .checkbox_label input[type='checkbox']");
+		var checkedCount = checkboxes.filter(":checked").length;
+
+		if (checkedCount === 0) {
+			alert("6개의 선택지 중 필수로 한 개의 선택지 선택이 필요합니다.");
+		} else {
+			if (applyPopup.css("display") === "none") {
+				body.addClass("hidden");
+				applyPopup.fadeIn();
+				applyPopupBg.fadeIn();
+				applyPopupScroll.scrollTop(0);
+			} else {
+				body.removeClass("hidden");
+				applyPopup.fadeOut();
+				applyPopupBg.fadeOut();
+			}
+		}
+
+		var listUl = $("#main_con > .apply_popup > .contents_con > .contents_con > .list_con > ul");
+		var listItems = $("#main_con > .apply_popup > .contents_con > .contents_con > .list_con > ul > li");
+		var selectedItems = listItems.filter(":visible");
+
+		if (selectedItems.length > 1) {
+			listUl.css("justify-content", "flex-start");
+			selectedItems.find(".list_div").css("border-top", "1px solid #dbdbdb");
+			selectedItems.first().find(".list_div").css("border-top", "none");
+		} else {
+			listUl.css("justify-content", "center");
+			selectedItems.find(".list_div").css("border-top", "none");
+		}
+	}
+
+	// 고민 선택 시 완료 팝업 리스트 노출 유무 설정
+	$("#main_con > .info01_con > .contents_con > .contents_con > .check_con > .list_con > ul > li > .list_div > .checkbox_label input[type='checkbox']").on("change", function() {
+		var name = $(this).attr("name");
+		var selector = "#main_con > .apply_popup > .contents_con > .contents_con > .list_con > ul > li." + name;
+		if ($(this).is(":checked")) {
+			$(selector).css("display", "block");
+		} else {
+			$(selector).css("display", "none");
+		}
+	});
+
+	// 애니메이션
+	function animation(){
+		const tl = gsap.timeline();
+		
+		// 배경
+		gsap.from("#main_con > .info01_con > .bg_con > .circle", {scale:0.5, rotate: 360, duration: 5, repeat: -1, yoyo: true, delay: 0.3})
+		gsap.from("#main_con > .info01_con > .bg_con > .emphasis", {rotate: 360, duration: 500, repeat: -1, delay: 0.3})
+
+		// 타이틀 및 요소들
+		tl.from("#main_con > .info01_con > .contents_con > .title_con > .text01_con", {opacity:0, x: 100, ease:"back", delay: 0.1})
+		tl.from("#main_con > .info01_con > .contents_con > .title_con > .text02_con", {opacity:0, scale:0.5, ease:"back", delay: 0.1})
+		tl.from("#main_con > .info01_con > .bg_con > .money", {opacity:0, scale:0.5, transformOrigin: "bottom", ease:"back", delay: 0.1}, "-=0.6")
+		tl.from("#main_con > .info01_con > .contents_con > .contents_con", {y: 100, ease: "back", opacity:0,}, "+=0.2")
+		tl.to("#main_con > .info01_con > .bg_con > .arrow .contents_con", {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 0.6}, "-=0.2")
+		tl.to("#main_con > .info01_con > .contents_con > .contents_con > .btn_con a > .icon_con svg .path01", {y: -2, ease:"power1.inOut", transformOrigin: "center", repeat: -1, yoyo: true, delay: 0.1}, "-=0.2")
+		tl.to("#main_con > .info01_con > .contents_con > .contents_con > .btn_con a > .icon_con svg .path02", {opacity:0.4, scale:0.5, transformOrigin: "center", ease:"power1.inOut", repeat: -1, yoyo: true, delay: 0.1}, "-=0.2")
+		tl.to("#main_con > .info01_con > .contents_con > .contents_con > .btn_con a > .icon_con svg .path03", {opacity:0.2, scale:0.5, transformOrigin: "center", ease:"power1.inOut", repeat: -1, yoyo: true, delay: 0.1}, "-=0.2")
+		tl.to("#main_con > .info01_con > .contents_con > .title_con > .text02_con", {className: "text02_con flicker"}) // flicker 애니메이션 추가
+	}
+
+	$(document).ready(function(){
+		animation();
+	})
+
+    // 전화상담문의
+	var filter = "win16|win32|win64|mac";
+	if(navigator.platform){
+		if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+			$(".call_btn").attr("href", "tel:1855-0753").css("cursor", "pointer");
+		}else{
+			$(".call_btn").attr("href", "javascript:;").css("cursor", "default");
+		}
+	}
+
+	// 숫자만 입력
+	function onlyNumber(obj) {
+		$(obj).keyup(function(){
+			$(this).val($(this).val().replace(/[^0-9]/g,""));
+		}); 
+	}
+
+	// 연락처
+	$(document).on("keyup", ".tel_input", function() { 
+		$(this).val( $(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/,"$1-$2-$3").replace("--", "-") );
+	});
+
+	// 스크롤 이동
+	function move_scroll(item_class){
+		var item = $("."+item_class);
+		var offset_item = item.offset();
+		var position_top = offset_item.top;
+		
+		$("html,body").animate({scrollTop:position_top}, 500);
+		
+		if(item_class === "go_bottom_quick"){
+			setTimeout(function(){
+				$("#bottom_quick > .contents_con .write_con > .input_con > ul > li:first-child").find(".input").focus();
+			}, 500);
+		}
+	}
+
+	//
+	$(document).ready(function(){
+		// 화면 너비
+		if (window.innerWidth > 1024) {	
+			// 하단 퀵 예외처리
+			$("#footer").css("padding-bottom",$("#bottom_quick").innerHeight()+"px");	
+
+			// 하단 퀵 창업문의 버튼 예외처리
+			$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:chkFooter();");
+		}else{
+			// 하단 퀵 예외처리
+			$("#footer").css("padding-bottom", "0");
+			
+			// 하단 퀵 창업문의 버튼 예외처리
+				$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:move_scroll('go_bottom_quick');");
+			
+			$(window).scroll(function() {
+				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+					// 하단 퀵 창업문의 버튼 예외처리
+					$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:chkFooter();");
+				} else {
+					// 하단 퀵 창업문의 버튼 예외처리
+					$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:move_scroll('go_bottom_quick');");
+				}
+			});
+		}
+	
+		// 리사이징
+		$(window).resize(function(){
+			// 화면 너비
+			if (window.innerWidth > 1024) {	
+				// 하단 퀵 예외처리
+				$("#footer").css("padding-bottom",$("#bottom_quick").innerHeight()+"px");	
+
+				// 하단 퀵 창업문의 버튼 예외처리
+				$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:chkFooter();");
+			}else{
+				// 하단 퀵 예외처리
+				$("#footer").css("padding-bottom", "0");
+
+				// 하단 퀵 창업문의 버튼 예외처리
+				$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:move_scroll('go_bottom_quick');");
+
+				$(window).scroll(function() {
+					if($(window).scrollTop() + $(window).height() == $(document).height()) {
+						// 하단 퀵 창업문의 버튼 예외처리
+						$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:chkFooter();");
+					} else {
+						// 하단 퀵 창업문의 버튼 예외처리
+						$("#bottom_quick > .contents_con .write_con > .btn_con .a_btn").attr("href","javascript:move_scroll('go_bottom_quick');");
+					}
+				});
+			}
+		});
+	})
+
+	// 
+	function agree_step03(){
+		if( $("#bottom_quick > .contents_con > .agree_popup_con").css("display") == "none" ){
+			$("#bottom_quick > .contents_con > .agree_popup_con_bg").fadeIn();
+			$("#bottom_quick > .contents_con > .agree_popup_con").fadeIn();
+		}else{
+			$("#bottom_quick > .contents_con > .agree_popup_con_bg").fadeOut();
+			$("#bottom_quick > .contents_con > .agree_popup_con").fadeOut();
+		}
+
+		if( $("#bottom_quick > .contents_con .write_con > .agree_con .a_btn input").attr("value") == "N" ){
+			$("#bottom_quick > .contents_con > .agree_popup_con > .contents_con > .btn_con .a_btn").attr("href","javascript:agree_step04();");
+			$("#bottom_quick > .contents_con > .agree_popup_con > .contents_con > .btn_con .a_btn").html("동의합니다");
+		}else{
+			$("#bottom_quick > .contents_con > .agree_popup_con > .contents_con > .btn_con .a_btn").attr("href","javascript:agree_step04_2();");
+			$("#bottom_quick > .contents_con > .agree_popup_con > .contents_con > .btn_con .a_btn").html("취소합니다");
+		}
+	}
+	
+	// 
+	function agree_step04(){
+		$("#bottom_quick > .contents_con .write_con > .agree_con .a_btn").addClass("on");
+		$("#bottom_quick > .contents_con .write_con > .agree_con .a_btn input").attr("value","Y");
+		$("#bottom_quick > .contents_con > .agree_popup_con_bg").fadeOut();
+		$("#bottom_quick > .contents_con > .agree_popup_con").fadeOut();
+	}
+
+	// 
+	function agree_step04_2(){
+		$("#bottom_quick > .contents_con .write_con > .agree_con .a_btn").removeClass("on");
+		$("#bottom_quick > .contents_con .write_con > .agree_con .a_btn input").attr("value","N");
+		$("#bottom_quick > .contents_con > .agree_popup_con_bg").fadeOut();
+		$("#bottom_quick > .contents_con > .agree_popup_con").fadeOut();
+	}
+
+	// 하단 신청하기
+	function chkFooter(){
+		var f = document.frmFooter;
+
+		if(f.name.value == ""){ alert("이름을 입력해 주세요."); f.name.focus(); return; }
+		if(f.tel.value.length < 12){ alert("연락처를 입력해 주세요."); f.tel.focus(); return; }
+		if(f.agree.value != "Y"){ alert("개인정보 수집 및 이용동의를 해주세요."); return; }
+
+		alert("신청이 완료되었습니다.");
+
+		location.href = "/pf/pf/ts_concern/end.html";
+
+		// 폼 기본 동작 제거
+		event.preventDefault();
+	}
+</script>

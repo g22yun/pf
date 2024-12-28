@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>더스윙제트</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0; target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="icon" type="image/svg+xml" href="/pf/pf/ts_concern/img/favicon.svg">
+
+<!--url 전송시-->
+<meta property="og:url" content="<?=$url?>">
+<meta property="og:title" content="더스윙제트">  
+<meta property="og:type" content="website">
+<meta property="og:image" content="/pf/pf/ts_concern/img/url_img.png">
+<meta property="og:description" content="더스윙제트">
+<!--url 전송시-->
+
+<!--url 전송시02-->
+<meta name="description" content="더스윙제트">
+<meta name="keywords" content="더스윙제트">
+
+<link rel="canonical" href="<?=$url?>">
+<!--url 전송시02-->
+
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/pf/pf/ts_concern/css/common_all.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/jquery.rwdImageMaps.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script type="text/javascript" src="/pf/pf/ts_concern/js/CustomEase.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+		$('img[usemap]').rwdImageMaps();
+
+        // GSAP
+		gsap.registerPlugin(CustomEase);
+	});
+</script>
+
+</head>
+<body>
+
+<div id="wrap">
+    <div id="header">
+        <div class="contents_con">
+            <div class="logo_con" onclick="location.href='/pf/pf/ts_concern/'">
+                <div class="img_con">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="26" viewBox="0 0 139 26" fill="none">
+                        <path d="M67.8667 4.75511L64.2315 0.272711C64.1432 0.164089 64.2201 0 64.3601 0H94.761C94.9631 0 95.1169 0.186044 95.0767 0.387111L94.8609 1.49529C94.8402 1.60044 94.7943 1.69751 94.7278 1.78071L77.2902 23.3099C77.2041 23.4162 77.2787 23.5745 77.4153 23.5745H89.1069C89.3032 23.5745 89.4891 23.4855 89.6143 23.333L91.2981 21.2853C91.3647 21.2044 91.4875 21.2056 91.5529 21.2853L95.157 25.7296C95.2443 25.8382 95.1685 26 95.0296 26H64.6161C64.4129 26 64.2602 25.8128 64.3004 25.6129L64.5139 24.5382C64.5346 24.4342 64.5805 24.3372 64.6459 24.2563L82.1776 2.69129C82.2637 2.58498 82.1891 2.42667 82.0525 2.42667H70.4401C70.2426 2.42667 70.0555 2.51449 69.9304 2.66702L68.1238 4.75627C68.0561 4.83716 67.9332 4.836 67.8678 4.75511H67.8667ZM14.0033 17.405L4.82081 18.0151V7.62551H11.9372V3.46667H0V22.3796L14.0033 21.5095V17.4061V17.405ZM9.29728 14.0978H14.4624V23.1111H19.2832V2.88889H14.4624V9.93778H9.29728V14.0978ZM20.6606 22.7644H40.6325V18.72H20.6606V22.7644ZM21.2345 14.7934C25.773 14.6848 28.8422 12.7261 30.6362 10.2683C32.4303 12.7273 35.4984 14.6848 40.0586 14.7934V10.9258C35.5064 10.578 33.057 7.31351 33.057 4.87529V3.00329H28.2362V4.87529C28.2362 7.31236 25.7867 10.5768 21.2345 10.9258V14.7934ZM41.3212 14.56H45.7965L45.4292 16.0148C43.7684 16.2968 42.4736 17.7748 42.4736 19.5982C42.4736 21.5962 44.0266 23.2255 45.9469 23.2255H57.751C59.6782 23.2255 61.2369 21.5904 61.2369 19.5855C61.2369 17.5806 59.6782 15.9455 57.751 15.9455H49.8231L50.1617 14.5588H55.5529V11.2077H41.3201V14.5588L41.3212 14.56ZM41.801 6.85013C41.801 8.86658 43.4171 10.5156 45.3982 10.5156H50.9778C52.96 10.5156 54.5968 8.86773 54.5968 6.85013C54.5968 4.83253 52.96 3.12 50.9778 3.12H45.3982C43.416 3.12 41.801 4.76782 41.801 6.85013ZM45.8631 6.7704C45.8631 6.33476 46.1443 6.00889 46.4898 6.00889H49.9929C50.3384 6.00889 50.6196 6.33591 50.6196 6.7704C50.6196 7.20489 50.3384 7.51111 49.9929 7.51111H46.4898C46.1443 7.51111 45.8631 7.20604 45.8631 6.7704ZM46.8801 19.4711C46.8801 19.1464 47.0959 18.9511 47.3541 18.9511H56.3071C56.5871 18.9511 56.7811 19.1464 56.7811 19.4711C56.7811 19.7958 56.5871 19.9911 56.3071 19.9911H47.3541C47.0959 19.9911 46.8801 19.7958 46.8801 19.4711ZM56.128 15.4844H61.0636V2.88889H56.128V15.4844ZM98.1379 7.16444H101.007V8.31769C101.007 13.6494 100.336 16.3488 97.9083 17.9804V22.434C100.158 21.476 101.824 19.9946 102.948 17.7308C104.073 19.9957 105.761 21.476 108.009 22.434V17.9804C105.581 16.3476 104.91 13.6494 104.91 8.31769V7.16444H107.78V3.46667H98.1379V7.16444ZM106.058 14.0978H109.042V23.1111H112.83V2.88889H109.042V10.4H106.058V14.0978ZM113.748 23.1111H117.651V2.88889H113.748V23.1111ZM119.028 22.7644H139V18.9511H119.028V22.7644ZM119.832 6.70222H138.426V3.23556H119.832V6.70222ZM138.426 12.2489H124.652V10.9778H138.426V7.62667H119.832V15.9467H138.426V12.2489Z" fill="#FD780F"/>
+                    </svg>
+                </div>
+
+                <div class="text_con">
+                    <span>
+                        와 함께하세요. 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main_con">
+        <div class="info01_con">
+            <div class="bg_con">
+				<div class="header_border"></div>
+
+				<div class="circle"></div>
+
+				<div class="arrow">
+					<div class="contents_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_bg_arrow.svg" alt="화살표 배경" class="fx">
+					</div>
+				</div>
+
+				<div class="money">
+					<div class="contents_con">
+						<div class="money01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money01_1.png" alt="머니 배경01-1" class="fx img01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money01_2.png" alt="머니 배경01-2" class="fx img02 pos">
+						</div>
+
+						<div class="money02">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money02_1.png" alt="머니 배경02-1" class="fx img01">
+							<img src="/pf/pf/ts_concern/img/info01_title_bg_money02_2.png" alt="머니 배경02-2" class="fx img02 pos">
+						</div>
+					</div>
+				</div>
+
+				<div class="emphasis">
+					<img src="/pf/pf/ts_concern/img/info01_title_bg_emphasis.svg" alt="강조 배경" class="fx">
+				</div>
+			</div>
+
+            <div class="contents_con">
+                <div class="title_con">
+					<div class="text01_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_text01_img.svg" alt="스크린골프 사장님" class="fx">
+					</div>
+
+					<div class="text02_con">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img01.svg" alt="매출이 떨어지셨다구요? 1" class="fx img01">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img02.svg" alt="매출이 떨어지셨다구요? 2" class="fx img02 pos">
+						<img src="/pf/pf/ts_concern/img/info01_title_text02_img03.svg" alt="매출이 떨어지셨다구요? 3" class="fx img03 pos">
+					</div>
+				</div>
+
+                <div class="contents_con">
+                    <div class="check_con">
+                        <div class="title_con">
+                            <span>
+                                문의가 <font class="dot">접</font><font class="dot">수</font> 되었습니다.
+                            </span>
+                        </div>
+                        
+                        <div class="text_con">
+                            <div class="text_div">
+                                <span>
+                                    빠르게 검토 후 자세한 상담을 위해 <br>
+                                    더스윙제트 창업 컨설턴트 “제트맨”이 <br>
+                                    연락드리도록 하겠습니다.  
+                                </span>
+                            </div>
+ 
+                            <div class="text_div">
+                                <span>
+                                    감사합니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro_con">
+						<div class="title_con">
+							<span>
+								유의사항
+							</span>
+						</div>
+
+						<div class="list_con">
+							<ul>
+								<li>
+									<span>
+										개인정보수집 및 이용동의 후 문의 가능합니다.
+									</span>
+								</li>
+								<li>
+									<span>
+										당사 사정에 따라 별도의 고지 없이 변경 및 조기 종료 될 수 있습니다.  
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="footer">
+		<div class="contents_con">
+			<div class="logo_con">
+				<span>
+					주식회사 더스윙골프
+				</span>
+			</div>
+
+			<div class="text_con">
+				<div class="text01_con">
+					<span>
+						사업자등록번호 : 403-87-01586  ㅣ  대표자 : 최재호  <font class="bar w_bar">ㅣ</font>  <br class="m_br">서울 강남구 논현로134길 10, 6층
+					</span>
+				</div>
+
+				<div class="text02_con">
+					<div class="title_con">
+						<span>
+							대표번호
+						</span>
+					</div>
+
+					<div class="btn_con">
+						<a href="javascript:;" class="call_btn">
+							1855-0753
+						</a>
+					</div>
+				</div>
+
+				<div class="text03_con">
+					<span>
+						COPYRIGHT© THE SWING Z  ALL RIGHTS RESERVED. 
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// 애니메이션
+	function animation(){
+		const tl = gsap.timeline();
+		
+		// 배경
+		gsap.from("#main_con > .info01_con > .bg_con > .circle", {scale:0.5, rotate: 360, duration: 5, repeat: -1, yoyo: true, delay: 0.3})
+		gsap.from("#main_con > .info01_con > .bg_con > .emphasis", {rotate: 360, duration: 500, repeat: -1, delay: 0.3})
+
+		// 타이틀 및 요소들
+		tl.from("#main_con > .info01_con > .contents_con > .title_con > .text01_con", {opacity:0, x: 100, ease:"back", delay: 0.1})
+		tl.from("#main_con > .info01_con > .contents_con > .title_con > .text02_con", {opacity:0, scale:0.5, ease:"back", delay: 0.1})
+		tl.from("#main_con > .info01_con > .bg_con > .money", {opacity:0, scale:0.5, transformOrigin: "bottom", ease:"back", delay: 0.1}, "-=0.6")
+		tl.from("#main_con > .info01_con > .contents_con > .contents_con", {y: 100, ease: "back", opacity:0,}, "+=0.2")
+		tl.to("#main_con > .info01_con > .bg_con > .arrow .contents_con", {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 0.6}, "-=0.2")
+		tl.to("#main_con > .info01_con > .contents_con > .title_con > .text02_con", {className: "text02_con flicker"}) // flicker 애니메이션 추가
+	}
+
+	$(document).ready(function(){
+		animation();
+
+		// 인트로 컨텐츠에 클래스명 추가
+		$("#main_con > .info01_con > .contents_con > .contents_con > .check_con").addClass("end");
+		$("#main_con > .info01_con > .contents_con > .contents_con > .intro_con").addClass("end");
+	})
+</script>
