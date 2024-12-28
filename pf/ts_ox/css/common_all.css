@@ -32,7 +32,7 @@
     #scale_con {transform:scale(1);}
 
     /* 격자 배경 */
-    .grid_bg {grid-template-columns:repeat(auto-fill, min(40px, 11.11vw)); grid-template-rows: repeat(auto-fill, min(40px, 11.11vw)); width:100%; height:100%; background-image:url("/pf/ts_ox/img/grid_bg_m.png");}
+    .grid_bg {grid-template-columns:repeat(auto-fill, min(40px, 11.11vw)); grid-template-rows: repeat(auto-fill, min(40px, 11.11vw)); width:100%; height:100%; background-image:url("/pf/pf/ts_ox/img/grid_bg_m.png");}
     .grid_bg:before {background:repeating-linear-gradient(to right, transparent, transparent min(39px, 10.83vw), rgba(21, 94, 42, 1) min(39px, 10.83vw), rgba(21, 94, 42, 1) min(40px, 11.11vw)), repeating-linear-gradient(to bottom, transparent, transparent min(39px, 10.83vw), rgba(21, 94, 42, 1) min(39px, 10.83vw), rgba(21, 94, 42, 1) min(40px, 11.11vw));}
 
     /* wrap 배경 (bottom값은 (푸터+상담폼=428) + n */ 
