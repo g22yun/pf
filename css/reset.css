@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+html,body,h1,h2,h3,h4,h5,h6,div,p,ul,ol,li,dl,dt,dd,address,blockquote,table,caption,thead,tbody,tfoot,tr,th,td,form,fieldset,legend,header,nav,aside,section,article,footer,figure,figcation,main,strong {margin: 0; padding: 0; font-weight: normal; font-style: normal;}
+header,nav,section,article,aside,figure,main,footer {display: block;}
+body {width:100%; margin:0 auto; padding:0; font-size:13px; line-height:normal; overflow-y:scroll; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;}
+img {border:none; padding:0; margin:0; outline:none;}
+ul {list-style:none; padding:0; margin:0;}
+ul:after {content:""; display:block; clear:both;}
+ul > li {display:block;}
+a {border:none; padding:0; margin:0; outline:none; text-decoration:none;}
+a:active {color:#000000; text-decoration:none;}
+a:link {color:#000000; text-decoration:none;}
+a:visited {color:#000000; text-decoration:none;}
+a:hover {color:#000000; text-decoration:none;}
+table {border-collapse: collapse;}
+address, i, em, cite {font-style: normal;}
+
+
+
+
+
